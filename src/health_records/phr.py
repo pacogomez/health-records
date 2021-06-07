@@ -11,6 +11,7 @@ from tabulate import tabulate
 import operator
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
+from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
 import warnings
 import matplotlib.cbook
 import numpy as np
@@ -200,17 +201,13 @@ def plot_cmd(ctx, metric, since):
         delta = ld - fd
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
         if delta.days > 365:
-            plt.gca().xaxis.set_major_locator(mdates.YearLocator())
-        elif delta.days > 31:
-            plt.gca().xaxis.set_major_locator(mdates.MonthLocator())
-        elif delta.days > 10:
-            plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=2))
+           plt.gca().xaxis.set_major_locator(mdates.MonthLocator(interval=int(delta.days/365)))
+        else:
+            plt.gca().xaxis.set_major_locator(MultipleLocator(20))
         for m in metric:
             plt.plot(dates[m], data[m], label=m)
         plt.gcf().autofmt_xdate()
         plt.legend()
-        # plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
-           # ncol=2, mode="expand", borderaxespad=0.)
         plt.show()
 
 cli.add_command(metrics_cmd)
