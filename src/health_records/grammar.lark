@@ -6,7 +6,7 @@
 ?start: directive*
 
 ?directive: CALENDAR_DATE "open" ITEM [UNIT] -> open_directive
-          | CALENDAR_DATE TIME "r" NARRATIVE (ITEM SIGNED_NUMBER)+ -> record_directive
+          | CALENDAR_DATE TIME "r" NARRATIVE (ITEM [SIGNED_NUMBER | STRING])+ -> record_directive
           | CALENDAR_DATE "range" ITEM SIGNED_NUMBER SIGNED_NUMBER ITEM -> range_directive
 
 NARRATIVE : STRING

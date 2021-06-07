@@ -197,8 +197,11 @@ def plot_cmd(ctx, metric, since):
         elif delta.days > 10:
             plt.gca().xaxis.set_major_locator(mdates.DayLocator(interval=2))
         for m in metric:
-            plt.plot(dates[m], data[m])
+            plt.plot(dates[m], data[m], label=m)
         plt.gcf().autofmt_xdate()
+        plt.legend()
+        # plt.legend(bbox_to_anchor=(0., 1.02, 1., .102), loc='lower left',
+           # ncol=2, mode="expand", borderaxespad=0.)
         plt.show()
 
 cli.add_command(metrics_cmd)

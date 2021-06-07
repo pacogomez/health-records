@@ -63,6 +63,13 @@ breath_metrics = {
     'helicobacter pylori (breath)': 'body.breath.helicobacter-pylori',
 }
 
+def is_number(s):
+    try:
+        float(s)
+        return True
+    except ValueError:
+        return False
+
 def to_metric(n, s):
     if 'breath test' in n.lower():
         m = breath_metrics
@@ -99,6 +106,12 @@ for n in nodes:
             a = narrative.split(' - Final result')
             d = dateutil_parser.parse(a[1].strip()[1:-1])
             n = a[0].strip()
-            print(f'{d.strftime("%Y-%m-%d %I:%M:%S%p")} r \'{n}\'')
+            has_metric = False
             for i in range(len(k)):
-                print(f'  {to_metric(n, k[i])} {v[i]} ;{k[i]}')
+                if not to_metric(n, k[i]).startswith(';'):
+                    has_metric = True
+            if has_metric:
+                print(f'{d.strftime("%Y-%m-%d %I:%M:%S%p")} r \'{n}\'')
+                for i in range(len(k)):
+                    m = v[i] if is_number(v[i]) else f"'{v[i]}'"
+                    print(f'  {to_metric(n, k[i])} {m} ;{k[i]}')
