@@ -1,3 +1,6 @@
+// Copyright (C) 2021 Paco Gomez
+// license GNU GPLv3
+
 // Grammar for PHR file format
 
 ?start: directive*
