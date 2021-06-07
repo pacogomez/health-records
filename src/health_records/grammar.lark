@@ -1,0 +1,41 @@
+// Grammar for PHR file format
+
+?start: directive*
+
+?directive: CALENDAR_DATE "open" ITEM [UNIT] -> open_directive
+          | CALENDAR_DATE TIME "r" NARRATIVE (ITEM SIGNED_NUMBER)+ -> record_directive
+          | CALENDAR_DATE "range" ITEM SIGNED_NUMBER SIGNED_NUMBER ITEM -> range_directive
+
+NARRATIVE : STRING
+
+CALENDAR_DATE : YEAR "-"? MONTH "-"? DAY
+
+YEAR  : DIGIT DIGIT DIGIT DIGIT
+MONTH : "0" "1".."9"
+      | "1" "0".."2"
+DAY   : "0" DIGIT
+      | "1" DIGIT
+      | "2" DIGIT
+      | "3" "0".."1"
+
+HOUR   : "0".."1" DIGIT
+       | "2" "0".."4"
+MINUTE : "0".."5" DIGIT
+SECOND : "0".."5" DIGIT
+       | "60" // leap second
+
+TIME   : "T"? HOUR ":"? MINUTE [":"? SECOND] ["am"|"AM"|"pm"|"PM"]
+
+ITEM : ("_"|LETTER) ("_"|"-"|LETTER|DIGIT|".")* ("_"|LETTER|DIGIT)
+UNIT : ("_"|LETTER) ("_"|"-"|LETTER|DIGIT|"."|"/")*
+
+COMMENT: /;[^\n]*/
+
+%import common.DIGIT
+%import common.WS
+%import common.LETTER
+%import common.SIGNED_NUMBER
+%import python.STRING
+
+%ignore WS
+%ignore COMMENT

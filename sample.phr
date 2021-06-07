@@ -1,0 +1,4752 @@
+; sample health data, does not represent any individual
+
+1980-01-20 open body
+
+1980-01-20 open body.weight          lb
+1980-01-20 open body.height          in
+1980-01-20 open body.fat-mass        lb
+1980-01-20 open body.fat-free-mass   lb
+1980-01-20 open body.fat-ratio       pct
+1980-01-20 open body.muscle-mass     lb
+1980-01-20 open body.bone-mass       lb
+1980-01-20 open body.water           pct
+1980-01-20 open body.bmi             bmi
+
+1980-01-20 open body.eyes
+1980-01-20 open body.eyes.left
+1980-01-20 open body.eyes.right
+
+1980-01-20 open body.heart
+1980-01-20 open body.heart.rate      bpm
+1980-01-20 open body.heart.pwv       ratio
+
+1980-01-20 open body.blood
+1980-01-20 open body.blood.press
+1980-01-20 open body.blood.press.sys               mmhg
+1980-01-20 open body.blood.press.dia               mmhg
+1980-01-20 open body.blood.chol.hdl                mg/dl
+1980-01-20 open body.blood.chol.ldl                mg/dl
+1980-01-20 open body.blood.chol.non-hdl            mg/dl
+1980-01-20 open body.blood.chol.total              mg/dl
+1980-01-20 open body.blood.chol.total-hdl-ratio    ratio
+1980-01-20 open body.blood.triglycerides           mg/dl
+1980-01-20 open body.blood.mch                     pg
+1980-01-20 open body.blood.mchc                    g/dl
+1980-01-20 open body.blood.alt-sgpt                u/l
+
+1980-01-20 open body.waist
+1980-01-20 open body.waist.cir        in
+
+1980-01-20 open vacc
+2020-01-01 open vacc.covid-19
+2020-01-01 open vacc.covid-19.pfizer  dose
+2020-01-01 open vacc.covid-19.moderna dose
+
+2020-01-01 range body.bmi 18.5 24.9 healthy
+2020-01-01 range body.bmi 25   29.9 overweight
+
+2020-06-07 00:00:00 r 'import from withings - grp 2'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2020-06-07 08:11:00 r 'import from withings - grp 1'
+  body.weight 166.34
+  body.fat-mass 21.61
+  body.muscle-mass 133.07
+  body.water 99.8
+  body.bone-mass 66.54
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.73
+
+2020-06-08 00:00:00 r 'import from withings - grp 4'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-06-08 07:45:00 r 'import from withings - grp 3'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2020-06-09 00:00:00 r 'import from withings - grp 6'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-06-09 08:00:00 r 'import from withings - grp 5'
+  body.weight 166.38
+  body.fat-mass 21.63
+  body.muscle-mass 133.09
+  body.water 99.83
+  body.bone-mass 66.54
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.76
+
+2020-06-10 00:00:00 r 'import from withings - grp 8'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-06-10 08:03:00 r 'import from withings - grp 7'
+  body.weight 164.95
+  body.fat-mass 21.43
+  body.muscle-mass 131.95
+  body.water 98.97
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.52
+
+2020-06-11 00:00:00 r 'import from withings - grp 10'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-06-11 08:04:00 r 'import from withings - grp 9'
+  body.weight 165.46
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.96
+
+2020-06-12 00:00:00 r 'import from withings - grp 12'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-06-12 07:47:00 r 'import from withings - grp 11'
+  body.weight 166.23
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.62
+
+2020-06-13 00:00:00 r 'import from withings - grp 14'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2020-06-13 07:46:00 r 'import from withings - grp 13'
+  body.weight 165.32
+  body.fat-mass 21.47
+  body.muscle-mass 132.26
+  body.water 99.19
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.85
+
+2020-06-14 00:00:00 r 'import from withings - grp 16'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-06-14 08:07:00 r 'import from withings - grp 15'
+  body.weight 164.69
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.28
+
+2020-06-15 00:00:00 r 'import from withings - grp 18'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-06-15 07:46:00 r 'import from withings - grp 17'
+  body.weight 166.43
+  body.fat-mass 21.63
+  body.muscle-mass 133.14
+  body.water 99.85
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.8
+
+2020-06-16 00:00:00 r 'import from withings - grp 20'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-06-16 08:03:00 r 'import from withings - grp 19'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2020-06-17 00:00:00 r 'import from withings - grp 22'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-06-17 08:08:00 r 'import from withings - grp 21'
+  body.weight 165.08
+  body.fat-mass 21.45
+  body.muscle-mass 132.06
+  body.water 99.03
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.63
+
+2020-06-18 00:00:00 r 'import from withings - grp 23'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2020-06-18 07:56:00 r 'import from withings - grp 24'
+  body.weight 164.55
+  body.fat-mass 21.38
+  body.muscle-mass 131.64
+  body.water 98.72
+  body.bone-mass 65.81
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.17
+
+2020-06-19 00:00:00 r 'import from withings - grp 26'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2020-06-19 07:58:00 r 'import from withings - grp 25'
+  body.weight 164.62
+  body.fat-mass 21.38
+  body.muscle-mass 131.68
+  body.water 98.77
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.23
+
+2020-06-20 00:00:00 r 'import from withings - grp 28'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-06-20 07:48:00 r 'import from withings - grp 27'
+  body.weight 164.57
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.19
+
+2020-06-21 00:00:00 r 'import from withings - grp 30'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-06-21 07:55:00 r 'import from withings - grp 29'
+  body.weight 165.1
+  body.fat-mass 21.45
+  body.muscle-mass 132.08
+  body.water 99.05
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.65
+
+2020-06-22 00:00:00 r 'import from withings - grp 32'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-06-22 07:54:00 r 'import from withings - grp 31'
+  body.weight 166.07
+  body.fat-mass 21.58
+  body.muscle-mass 132.85
+  body.water 99.63
+  body.bone-mass 66.43
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.49
+
+2020-06-23 00:00:00 r 'import from withings - grp 34'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2020-06-23 07:49:00 r 'import from withings - grp 33'
+  body.weight 165.92
+  body.fat-mass 21.56
+  body.muscle-mass 132.72
+  body.water 99.54
+  body.bone-mass 66.36
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.36
+
+2020-06-24 00:00:00 r 'import from withings - grp 36'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-06-24 08:02:00 r 'import from withings - grp 35'
+  body.weight 164.55
+  body.fat-mass 21.38
+  body.muscle-mass 131.64
+  body.water 98.72
+  body.bone-mass 65.81
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.17
+
+2020-06-25 00:00:00 r 'import from withings - grp 38'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2020-06-25 07:58:00 r 'import from withings - grp 37'
+  body.weight 165.06
+  body.fat-mass 21.45
+  body.muscle-mass 132.03
+  body.water 99.03
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.61
+
+2020-06-26 00:00:00 r 'import from withings - grp 40'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-06-26 08:02:00 r 'import from withings - grp 39'
+  body.weight 166.27
+  body.fat-mass 21.61
+  body.muscle-mass 133.0
+  body.water 99.76
+  body.bone-mass 66.49
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.67
+
+2020-06-27 00:00:00 r 'import from withings - grp 42'
+  body.heart.rate 77
+  body.heart.pwv 5.6
+
+2020-06-27 08:06:00 r 'import from withings - grp 41'
+  body.weight 166.63
+  body.fat-mass 21.65
+  body.muscle-mass 133.29
+  body.water 99.96
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.98
+
+2020-06-28 00:00:00 r 'import from withings - grp 44'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-06-28 07:57:00 r 'import from withings - grp 43'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2020-06-29 00:00:00 r 'import from withings - grp 46'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-06-29 08:11:00 r 'import from withings - grp 45'
+  body.weight 165.63
+  body.fat-mass 21.52
+  body.muscle-mass 132.5
+  body.water 99.36
+  body.bone-mass 66.25
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.12
+
+2020-06-30 00:00:00 r 'import from withings - grp 48'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-06-30 08:12:00 r 'import from withings - grp 47'
+  body.weight 164.62
+  body.fat-mass 21.38
+  body.muscle-mass 131.68
+  body.water 98.77
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.23
+
+2020-07-01 00:00:00 r 'import from withings - grp 50'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2020-07-01 08:14:00 r 'import from withings - grp 49'
+  body.weight 166.18
+  body.fat-mass 21.58
+  body.muscle-mass 132.94
+  body.water 99.69
+  body.bone-mass 66.47
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.6
+
+2020-07-02 00:00:00 r 'import from withings - grp 52'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-07-02 08:09:00 r 'import from withings - grp 51'
+  body.weight 164.62
+  body.fat-mass 21.38
+  body.muscle-mass 131.68
+  body.water 98.77
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.23
+
+2020-07-03 00:00:00 r 'import from withings - grp 54'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-07-03 07:56:00 r 'import from withings - grp 53'
+  body.weight 165.06
+  body.fat-mass 21.45
+  body.muscle-mass 132.03
+  body.water 99.03
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.61
+
+2020-07-04 00:00:00 r 'import from withings - grp 56'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-07-04 07:49:00 r 'import from withings - grp 55'
+  body.weight 164.99
+  body.fat-mass 21.43
+  body.muscle-mass 131.99
+  body.water 98.99
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.56
+
+2020-07-05 00:00:00 r 'import from withings - grp 58'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-07-05 08:10:00 r 'import from withings - grp 57'
+  body.weight 164.88
+  body.fat-mass 21.43
+  body.muscle-mass 131.9
+  body.water 98.92
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.45
+
+2020-07-06 00:00:00 r 'import from withings - grp 60'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2020-07-06 08:01:00 r 'import from withings - grp 59'
+  body.weight 164.77
+  body.fat-mass 21.41
+  body.muscle-mass 131.81
+  body.water 98.86
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.37
+
+2020-07-07 00:00:00 r 'import from withings - grp 62'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-07-07 07:45:00 r 'import from withings - grp 61'
+  body.weight 165.68
+  body.fat-mass 21.52
+  body.muscle-mass 132.54
+  body.water 99.41
+  body.bone-mass 66.27
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.16
+
+2020-07-08 00:00:00 r 'import from withings - grp 64'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-07-08 07:59:00 r 'import from withings - grp 63'
+  body.weight 165.19
+  body.fat-mass 21.47
+  body.muscle-mass 132.14
+  body.water 99.1
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.72
+
+2020-07-09 00:00:00 r 'import from withings - grp 66'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2020-07-09 07:55:00 r 'import from withings - grp 65'
+  body.weight 165.1
+  body.fat-mass 21.45
+  body.muscle-mass 132.08
+  body.water 99.05
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.65
+
+2020-07-10 00:00:00 r 'import from withings - grp 67'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-07-10 08:03:00 r 'import from withings - grp 68'
+  body.weight 166.21
+  body.fat-mass 21.61
+  body.muscle-mass 132.96
+  body.water 99.71
+  body.bone-mass 66.47
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.6
+
+2020-07-11 00:00:00 r 'import from withings - grp 70'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-07-11 07:51:00 r 'import from withings - grp 69'
+  body.weight 166.69
+  body.fat-mass 21.65
+  body.muscle-mass 133.34
+  body.water 100.0
+  body.bone-mass 66.67
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.04
+
+2020-07-12 00:00:00 r 'import from withings - grp 71'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-07-12 08:06:00 r 'import from withings - grp 72'
+  body.weight 164.64
+  body.fat-mass 21.38
+  body.muscle-mass 131.7
+  body.water 98.77
+  body.bone-mass 65.85
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.26
+
+2020-07-13 00:00:00 r 'import from withings - grp 74'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-07-13 08:04:00 r 'import from withings - grp 73'
+  body.weight 166.05
+  body.fat-mass 21.58
+  body.muscle-mass 132.83
+  body.water 99.63
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.47
+
+2020-07-14 00:00:00 r 'import from withings - grp 76'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-07-14 07:49:00 r 'import from withings - grp 75'
+  body.weight 165.39
+  body.fat-mass 21.5
+  body.muscle-mass 132.3
+  body.water 99.23
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.9
+
+2020-07-15 00:00:00 r 'import from withings - grp 78'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-07-15 08:03:00 r 'import from withings - grp 77'
+  body.weight 164.69
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.28
+
+2020-07-16 00:00:00 r 'import from withings - grp 80'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-07-16 07:57:00 r 'import from withings - grp 79'
+  body.weight 165.41
+  body.fat-mass 21.5
+  body.muscle-mass 132.32
+  body.water 99.23
+  body.bone-mass 66.16
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.92
+
+2020-07-17 00:00:00 r 'import from withings - grp 81'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-07-17 07:57:00 r 'import from withings - grp 82'
+  body.weight 166.54
+  body.fat-mass 21.65
+  body.muscle-mass 133.23
+  body.water 99.91
+  body.bone-mass 66.6
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.89
+
+2020-07-18 00:00:00 r 'import from withings - grp 84'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-07-18 07:46:00 r 'import from withings - grp 83'
+  body.weight 166.01
+  body.fat-mass 21.56
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.45
+
+2020-07-19 00:00:00 r 'import from withings - grp 86'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-07-19 07:53:00 r 'import from withings - grp 85'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2020-07-20 00:00:00 r 'import from withings - grp 88'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-07-20 07:48:00 r 'import from withings - grp 87'
+  body.weight 166.03
+  body.fat-mass 21.58
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.45
+
+2020-07-21 00:00:00 r 'import from withings - grp 90'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-07-21 08:09:00 r 'import from withings - grp 89'
+  body.weight 166.14
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.56
+
+2020-07-22 00:00:00 r 'import from withings - grp 92'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-07-22 07:48:00 r 'import from withings - grp 91'
+  body.weight 165.79
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.25
+
+2020-07-23 00:00:00 r 'import from withings - grp 93'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-07-23 08:09:00 r 'import from withings - grp 94'
+  body.weight 165.68
+  body.fat-mass 21.52
+  body.muscle-mass 132.54
+  body.water 99.41
+  body.bone-mass 66.27
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.16
+
+2020-07-24 00:00:00 r 'import from withings - grp 96'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-07-24 08:05:00 r 'import from withings - grp 95'
+  body.weight 165.3
+  body.fat-mass 21.47
+  body.muscle-mass 132.23
+  body.water 99.16
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.83
+
+2020-07-25 00:00:00 r 'import from withings - grp 98'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-07-25 07:52:00 r 'import from withings - grp 97'
+  body.weight 165.66
+  body.fat-mass 21.52
+  body.muscle-mass 132.52
+  body.water 99.38
+  body.bone-mass 66.25
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.14
+
+2020-07-26 00:00:00 r 'import from withings - grp 100'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-07-26 08:07:00 r 'import from withings - grp 99'
+  body.weight 166.01
+  body.fat-mass 21.56
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.45
+
+2020-07-27 00:00:00 r 'import from withings - grp 102'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-07-27 07:54:00 r 'import from withings - grp 101'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2020-07-28 00:00:00 r 'import from withings - grp 104'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-07-28 07:53:00 r 'import from withings - grp 103'
+  body.weight 165.17
+  body.fat-mass 21.45
+  body.muscle-mass 132.12
+  body.water 99.1
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.72
+
+2020-07-29 00:00:00 r 'import from withings - grp 106'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-07-29 08:11:00 r 'import from withings - grp 105'
+  body.weight 166.54
+  body.fat-mass 21.65
+  body.muscle-mass 133.23
+  body.water 99.91
+  body.bone-mass 66.6
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.89
+
+2020-07-30 00:00:00 r 'import from withings - grp 108'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2020-07-30 07:56:00 r 'import from withings - grp 107'
+  body.weight 166.27
+  body.fat-mass 21.61
+  body.muscle-mass 133.0
+  body.water 99.76
+  body.bone-mass 66.49
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.67
+
+2020-07-31 00:00:00 r 'import from withings - grp 110'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2020-07-31 07:57:00 r 'import from withings - grp 109'
+  body.weight 165.59
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.07
+
+2020-08-01 00:00:00 r 'import from withings - grp 111'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-08-01 07:56:00 r 'import from withings - grp 112'
+  body.weight 165.52
+  body.fat-mass 21.52
+  body.muscle-mass 132.41
+  body.water 99.3
+  body.bone-mass 66.2
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.01
+
+2020-08-02 00:00:00 r 'import from withings - grp 114'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-08-02 07:58:00 r 'import from withings - grp 113'
+  body.weight 166.03
+  body.fat-mass 21.58
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.45
+
+2020-08-03 00:00:00 r 'import from withings - grp 116'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-08-03 08:07:00 r 'import from withings - grp 115'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2020-08-04 00:00:00 r 'import from withings - grp 118'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-08-04 08:03:00 r 'import from withings - grp 117'
+  body.weight 165.74
+  body.fat-mass 21.54
+  body.muscle-mass 132.59
+  body.water 99.43
+  body.bone-mass 66.29
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.2
+
+2020-08-05 00:00:00 r 'import from withings - grp 120'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-08-05 08:00:00 r 'import from withings - grp 119'
+  body.weight 165.94
+  body.fat-mass 21.56
+  body.muscle-mass 132.74
+  body.water 99.56
+  body.bone-mass 66.36
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.38
+
+2020-08-06 00:00:00 r 'import from withings - grp 121'
+  body.heart.rate 80
+  body.heart.pwv 5.5
+
+2020-08-06 08:09:00 r 'import from withings - grp 122'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-08-07 00:00:00 r 'import from withings - grp 123'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-08-07 08:08:00 r 'import from withings - grp 124'
+  body.weight 166.51
+  body.fat-mass 21.63
+  body.muscle-mass 133.2
+  body.water 99.89
+  body.bone-mass 66.6
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.89
+
+2020-08-08 00:00:00 r 'import from withings - grp 126'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-08-08 08:04:00 r 'import from withings - grp 125'
+  body.weight 166.25
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.65
+
+2020-08-09 00:00:00 r 'import from withings - grp 128'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-08-09 08:08:00 r 'import from withings - grp 127'
+  body.weight 166.18
+  body.fat-mass 21.58
+  body.muscle-mass 132.94
+  body.water 99.69
+  body.bone-mass 66.47
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.6
+
+2020-08-10 00:00:00 r 'import from withings - grp 130'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-08-10 08:14:00 r 'import from withings - grp 129'
+  body.weight 165.26
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.79
+
+2020-08-11 00:00:00 r 'import from withings - grp 132'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-08-11 07:51:00 r 'import from withings - grp 131'
+  body.weight 165.88
+  body.fat-mass 21.56
+  body.muscle-mass 132.7
+  body.water 99.52
+  body.bone-mass 66.34
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.31
+
+2020-08-12 00:00:00 r 'import from withings - grp 134'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-08-12 08:15:00 r 'import from withings - grp 133'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-08-13 00:00:00 r 'import from withings - grp 136'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-08-13 08:10:00 r 'import from withings - grp 135'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2020-08-14 00:00:00 r 'import from withings - grp 137'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2020-08-14 07:47:00 r 'import from withings - grp 138'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2020-08-15 00:00:00 r 'import from withings - grp 140'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-08-15 08:10:00 r 'import from withings - grp 139'
+  body.weight 165.04
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.59
+
+2020-08-16 00:00:00 r 'import from withings - grp 142'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2020-08-16 07:53:00 r 'import from withings - grp 141'
+  body.weight 165.15
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.7
+
+2020-08-17 00:00:00 r 'import from withings - grp 144'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-08-17 08:00:00 r 'import from withings - grp 143'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-08-18 00:00:00 r 'import from withings - grp 146'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-08-18 07:54:00 r 'import from withings - grp 145'
+  body.weight 164.62
+  body.fat-mass 21.38
+  body.muscle-mass 131.68
+  body.water 98.77
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.23
+
+2020-08-19 00:00:00 r 'import from withings - grp 148'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-08-19 07:45:00 r 'import from withings - grp 147'
+  body.weight 165.81
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.27
+
+2020-08-20 00:00:00 r 'import from withings - grp 150'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-08-20 08:05:00 r 'import from withings - grp 149'
+  body.weight 164.66
+  body.fat-mass 21.38
+  body.muscle-mass 131.73
+  body.water 98.79
+  body.bone-mass 65.85
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.28
+
+2020-08-21 00:00:00 r 'import from withings - grp 152'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-08-21 07:47:00 r 'import from withings - grp 151'
+  body.weight 165.19
+  body.fat-mass 21.47
+  body.muscle-mass 132.14
+  body.water 99.1
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.72
+
+2020-08-22 00:00:00 r 'import from withings - grp 154'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-08-22 07:50:00 r 'import from withings - grp 153'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2020-08-23 00:00:00 r 'import from withings - grp 156'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-08-23 08:08:00 r 'import from withings - grp 155'
+  body.weight 166.47
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.84
+
+2020-08-24 00:00:00 r 'import from withings - grp 158'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-08-24 08:03:00 r 'import from withings - grp 157'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2020-08-25 00:00:00 r 'import from withings - grp 160'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-08-25 08:03:00 r 'import from withings - grp 159'
+  body.weight 166.29
+  body.fat-mass 21.61
+  body.muscle-mass 133.03
+  body.water 99.76
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.69
+
+2020-08-26 00:00:00 r 'import from withings - grp 161'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-08-26 08:13:00 r 'import from withings - grp 162'
+  body.weight 166.63
+  body.fat-mass 21.65
+  body.muscle-mass 133.29
+  body.water 99.96
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.98
+
+2020-08-27 00:00:00 r 'import from withings - grp 164'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-08-27 08:13:00 r 'import from withings - grp 163'
+  body.weight 165.54
+  body.fat-mass 21.52
+  body.muscle-mass 132.43
+  body.water 99.32
+  body.bone-mass 66.2
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.03
+
+2020-08-28 00:00:00 r 'import from withings - grp 166'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2020-08-28 07:53:00 r 'import from withings - grp 165'
+  body.weight 165.32
+  body.fat-mass 21.47
+  body.muscle-mass 132.26
+  body.water 99.19
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.85
+
+2020-08-29 00:00:00 r 'import from withings - grp 168'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-08-29 08:00:00 r 'import from withings - grp 167'
+  body.weight 166.49
+  body.fat-mass 21.63
+  body.muscle-mass 133.18
+  body.water 99.89
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.87
+
+2020-08-30 00:00:00 r 'import from withings - grp 170'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-08-30 07:51:00 r 'import from withings - grp 169'
+  body.weight 166.12
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.53
+
+2020-08-31 00:00:00 r 'import from withings - grp 172'
+  body.heart.rate 80
+  body.heart.pwv 5.5
+
+2020-08-31 07:59:00 r 'import from withings - grp 171'
+  body.weight 165.39
+  body.fat-mass 21.5
+  body.muscle-mass 132.3
+  body.water 99.23
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.9
+
+2020-09-03 00:00:00 r 'import from withings - grp 174'
+  body.heart.rate 81
+  body.heart.pwv 5.5
+
+2020-09-03 08:00:00 r 'import from withings - grp 173'
+  body.weight 166.05
+  body.fat-mass 21.58
+  body.muscle-mass 132.83
+  body.water 99.63
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.47
+
+2020-09-04 00:00:00 r 'import from withings - grp 176'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-09-04 08:08:00 r 'import from withings - grp 175'
+  body.weight 166.29
+  body.fat-mass 21.61
+  body.muscle-mass 133.03
+  body.water 99.76
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.69
+
+2020-09-05 00:00:00 r 'import from withings - grp 178'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-09-05 07:49:00 r 'import from withings - grp 177'
+  body.weight 164.84
+  body.fat-mass 21.43
+  body.muscle-mass 131.86
+  body.water 98.9
+  body.bone-mass 65.92
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.41
+
+2020-09-06 00:00:00 r 'import from withings - grp 180'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-09-06 07:58:00 r 'import from withings - grp 179'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2020-09-07 00:00:00 r 'import from withings - grp 182'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2020-09-07 07:55:00 r 'import from withings - grp 181'
+  body.weight 165.3
+  body.fat-mass 21.47
+  body.muscle-mass 132.23
+  body.water 99.16
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.83
+
+2020-09-08 00:00:00 r 'import from withings - grp 184'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-09-08 08:08:00 r 'import from withings - grp 183'
+  body.weight 165.92
+  body.fat-mass 21.56
+  body.muscle-mass 132.72
+  body.water 99.54
+  body.bone-mass 66.36
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.36
+
+2020-09-09 00:00:00 r 'import from withings - grp 186'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-09-09 07:59:00 r 'import from withings - grp 185'
+  body.weight 165.1
+  body.fat-mass 21.45
+  body.muscle-mass 132.08
+  body.water 99.05
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.65
+
+2020-09-10 00:00:00 r 'import from withings - grp 188'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-09-10 08:08:00 r 'import from withings - grp 187'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2020-09-11 00:00:00 r 'import from withings - grp 190'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2020-09-11 07:50:00 r 'import from withings - grp 189'
+  body.weight 164.8
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.39
+
+2020-09-12 00:00:00 r 'import from withings - grp 192'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-09-12 07:58:00 r 'import from withings - grp 191'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-09-13 00:00:00 r 'import from withings - grp 194'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-09-13 07:59:00 r 'import from withings - grp 193'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2020-09-14 00:00:00 r 'import from withings - grp 196'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2020-09-14 07:58:00 r 'import from withings - grp 195'
+  body.weight 165.41
+  body.fat-mass 21.5
+  body.muscle-mass 132.32
+  body.water 99.23
+  body.bone-mass 66.16
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.92
+
+2020-09-15 00:00:00 r 'import from withings - grp 198'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-09-15 08:05:00 r 'import from withings - grp 197'
+  body.weight 165.04
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.59
+
+2020-09-16 00:00:00 r 'import from withings - grp 200'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-09-16 08:15:00 r 'import from withings - grp 199'
+  body.weight 166.63
+  body.fat-mass 21.65
+  body.muscle-mass 133.29
+  body.water 99.96
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.98
+
+2020-09-17 00:00:00 r 'import from withings - grp 202'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-09-17 08:08:00 r 'import from withings - grp 201'
+  body.weight 164.75
+  body.fat-mass 21.41
+  body.muscle-mass 131.79
+  body.water 98.83
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.34
+
+2020-09-18 00:00:00 r 'import from withings - grp 204'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-09-18 07:50:00 r 'import from withings - grp 203'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2020-09-19 00:00:00 r 'import from withings - grp 206'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-09-19 07:58:00 r 'import from withings - grp 205'
+  body.weight 165.77
+  body.fat-mass 21.54
+  body.muscle-mass 132.61
+  body.water 99.45
+  body.bone-mass 66.29
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.23
+
+2020-09-20 00:00:00 r 'import from withings - grp 208'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-09-20 07:55:00 r 'import from withings - grp 207'
+  body.weight 166.45
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.82
+
+2020-09-21 00:00:00 r 'import from withings - grp 210'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2020-09-21 07:55:00 r 'import from withings - grp 209'
+  body.weight 166.29
+  body.fat-mass 21.61
+  body.muscle-mass 133.03
+  body.water 99.76
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.69
+
+2020-09-22 00:00:00 r 'import from withings - grp 212'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2020-09-22 08:12:00 r 'import from withings - grp 211'
+  body.weight 165.35
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.85
+
+2020-09-23 00:00:00 r 'import from withings - grp 214'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-09-23 08:12:00 r 'import from withings - grp 213'
+  body.weight 166.51
+  body.fat-mass 21.63
+  body.muscle-mass 133.2
+  body.water 99.89
+  body.bone-mass 66.6
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.89
+
+2020-09-24 00:00:00 r 'import from withings - grp 216'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-09-24 08:15:00 r 'import from withings - grp 215'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2020-09-25 00:00:00 r 'import from withings - grp 218'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-09-25 07:51:00 r 'import from withings - grp 217'
+  body.weight 165.94
+  body.fat-mass 21.56
+  body.muscle-mass 132.74
+  body.water 99.56
+  body.bone-mass 66.36
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.38
+
+2020-09-26 00:00:00 r 'import from withings - grp 220'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-09-26 08:12:00 r 'import from withings - grp 219'
+  body.weight 164.86
+  body.fat-mass 21.43
+  body.muscle-mass 131.88
+  body.water 98.9
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.43
+
+2020-09-27 00:00:00 r 'import from withings - grp 222'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-09-27 08:13:00 r 'import from withings - grp 221'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-09-28 00:00:00 r 'import from withings - grp 224'
+  body.heart.rate 77
+  body.heart.pwv 5.6
+
+2020-09-28 08:13:00 r 'import from withings - grp 223'
+  body.weight 165.94
+  body.fat-mass 21.56
+  body.muscle-mass 132.74
+  body.water 99.56
+  body.bone-mass 66.36
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.38
+
+2020-09-29 00:00:00 r 'import from withings - grp 226'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2020-09-29 08:08:00 r 'import from withings - grp 225'
+  body.weight 165.35
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.85
+
+2020-09-30 00:00:00 r 'import from withings - grp 228'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-09-30 08:14:00 r 'import from withings - grp 227'
+  body.weight 166.14
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.56
+
+2020-10-01 00:00:00 r 'import from withings - grp 230'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-10-01 07:54:00 r 'import from withings - grp 229'
+  body.weight 164.91
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.48
+
+2020-10-02 00:00:00 r 'import from withings - grp 231'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-10-02 08:04:00 r 'import from withings - grp 232'
+  body.weight 164.91
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.48
+
+2020-10-03 00:00:00 r 'import from withings - grp 234'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-10-03 08:06:00 r 'import from withings - grp 233'
+  body.weight 166.18
+  body.fat-mass 21.58
+  body.muscle-mass 132.94
+  body.water 99.69
+  body.bone-mass 66.47
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.6
+
+2020-10-04 00:00:00 r 'import from withings - grp 236'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-10-04 08:04:00 r 'import from withings - grp 235'
+  body.weight 165.52
+  body.fat-mass 21.52
+  body.muscle-mass 132.41
+  body.water 99.3
+  body.bone-mass 66.2
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.01
+
+2020-10-05 00:00:00 r 'import from withings - grp 238'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-10-05 07:45:00 r 'import from withings - grp 237'
+  body.weight 166.47
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.84
+
+2020-10-06 00:00:00 r 'import from withings - grp 240'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2020-10-06 07:51:00 r 'import from withings - grp 239'
+  body.weight 165.63
+  body.fat-mass 21.52
+  body.muscle-mass 132.5
+  body.water 99.36
+  body.bone-mass 66.25
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.12
+
+2020-10-07 00:00:00 r 'import from withings - grp 242'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-10-07 07:58:00 r 'import from withings - grp 241'
+  body.weight 165.21
+  body.fat-mass 21.47
+  body.muscle-mass 132.17
+  body.water 99.12
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.74
+
+2020-10-08 00:00:00 r 'import from withings - grp 244'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2020-10-08 07:56:00 r 'import from withings - grp 243'
+  body.weight 166.63
+  body.fat-mass 21.65
+  body.muscle-mass 133.29
+  body.water 99.96
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.98
+
+2020-10-09 00:00:00 r 'import from withings - grp 246'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2020-10-09 07:48:00 r 'import from withings - grp 245'
+  body.weight 165.88
+  body.fat-mass 21.56
+  body.muscle-mass 132.7
+  body.water 99.52
+  body.bone-mass 66.34
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.31
+
+2020-10-10 00:00:00 r 'import from withings - grp 247'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2020-10-10 08:13:00 r 'import from withings - grp 248'
+  body.weight 165.3
+  body.fat-mass 21.47
+  body.muscle-mass 132.23
+  body.water 99.16
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.83
+
+2020-10-11 00:00:00 r 'import from withings - grp 250'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-10-11 07:45:00 r 'import from withings - grp 249'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2020-10-12 00:00:00 r 'import from withings - grp 252'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-10-12 08:11:00 r 'import from withings - grp 251'
+  body.weight 165.52
+  body.fat-mass 21.52
+  body.muscle-mass 132.41
+  body.water 99.3
+  body.bone-mass 66.2
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.01
+
+2020-10-13 00:00:00 r 'import from withings - grp 254'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2020-10-13 08:06:00 r 'import from withings - grp 253'
+  body.weight 166.21
+  body.fat-mass 21.61
+  body.muscle-mass 132.96
+  body.water 99.71
+  body.bone-mass 66.47
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.6
+
+2020-10-14 00:00:00 r 'import from withings - grp 256'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-10-14 07:46:00 r 'import from withings - grp 255'
+  body.weight 165.41
+  body.fat-mass 21.5
+  body.muscle-mass 132.32
+  body.water 99.23
+  body.bone-mass 66.16
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.92
+
+2020-10-15 00:00:00 r 'import from withings - grp 258'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-10-15 08:15:00 r 'import from withings - grp 257'
+  body.weight 164.84
+  body.fat-mass 21.43
+  body.muscle-mass 131.86
+  body.water 98.9
+  body.bone-mass 65.92
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.41
+
+2020-10-16 00:00:00 r 'import from withings - grp 260'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-10-16 07:45:00 r 'import from withings - grp 259'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2020-10-17 00:00:00 r 'import from withings - grp 262'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-10-17 08:11:00 r 'import from withings - grp 261'
+  body.weight 166.58
+  body.fat-mass 21.65
+  body.muscle-mass 133.25
+  body.water 99.94
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.93
+
+2020-10-18 00:00:00 r 'import from withings - grp 264'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-10-18 07:53:00 r 'import from withings - grp 263'
+  body.weight 166.56
+  body.fat-mass 21.65
+  body.muscle-mass 133.25
+  body.water 99.94
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.91
+
+2020-10-19 00:00:00 r 'import from withings - grp 266'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-10-19 08:00:00 r 'import from withings - grp 265'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2020-10-20 00:00:00 r 'import from withings - grp 268'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-10-20 08:02:00 r 'import from withings - grp 267'
+  body.weight 166.23
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.62
+
+2020-10-21 00:00:00 r 'import from withings - grp 270'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-10-21 07:46:00 r 'import from withings - grp 269'
+  body.weight 165.04
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.59
+
+2020-10-22 00:00:00 r 'import from withings - grp 272'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-10-22 08:07:00 r 'import from withings - grp 271'
+  body.weight 165.99
+  body.fat-mass 21.56
+  body.muscle-mass 132.78
+  body.water 99.58
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.42
+
+2020-10-23 00:00:00 r 'import from withings - grp 274'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2020-10-23 07:49:00 r 'import from withings - grp 273'
+  body.weight 166.38
+  body.fat-mass 21.63
+  body.muscle-mass 133.09
+  body.water 99.83
+  body.bone-mass 66.54
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.76
+
+2020-10-24 00:00:00 r 'import from withings - grp 276'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2020-10-24 08:06:00 r 'import from withings - grp 275'
+  body.weight 165.08
+  body.fat-mass 21.45
+  body.muscle-mass 132.06
+  body.water 99.03
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.63
+
+2020-10-25 00:00:00 r 'import from withings - grp 278'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2020-10-25 06:58:00 r 'import from withings - grp 277'
+  body.weight 165.39
+  body.fat-mass 21.5
+  body.muscle-mass 132.3
+  body.water 99.23
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.9
+
+2020-10-26 00:00:00 r 'import from withings - grp 280'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2020-10-26 08:00:00 r 'import from withings - grp 279'
+  body.weight 165.83
+  body.fat-mass 21.54
+  body.muscle-mass 132.65
+  body.water 99.49
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.29
+
+2020-10-27 00:00:00 r 'import from withings - grp 282'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-10-27 08:11:00 r 'import from withings - grp 281'
+  body.weight 164.51
+  body.fat-mass 21.38
+  body.muscle-mass 131.59
+  body.water 98.7
+  body.bone-mass 65.79
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.12
+
+2020-10-28 00:00:00 r 'import from withings - grp 284'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-10-28 07:50:00 r 'import from withings - grp 283'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2020-10-29 00:00:00 r 'import from withings - grp 286'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2020-10-29 08:03:00 r 'import from withings - grp 285'
+  body.weight 165.15
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.7
+
+2020-10-30 00:00:00 r 'import from withings - grp 288'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-10-30 08:00:00 r 'import from withings - grp 287'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2020-10-31 00:00:00 r 'import from withings - grp 290'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2020-10-31 07:59:00 r 'import from withings - grp 289'
+  body.weight 165.21
+  body.fat-mass 21.47
+  body.muscle-mass 132.17
+  body.water 99.12
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.74
+
+2020-11-01 00:00:00 r 'import from withings - grp 292'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2020-11-01 08:13:00 r 'import from withings - grp 291'
+  body.weight 165.35
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.85
+
+2020-11-02 00:00:00 r 'import from withings - grp 294'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-11-02 08:01:00 r 'import from withings - grp 293'
+  body.weight 164.93
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.5
+
+2020-11-03 00:00:00 r 'import from withings - grp 296'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-11-03 08:15:00 r 'import from withings - grp 295'
+  body.weight 165.32
+  body.fat-mass 21.47
+  body.muscle-mass 132.26
+  body.water 99.19
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.85
+
+2020-11-04 00:00:00 r 'import from withings - grp 298'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-11-04 07:50:00 r 'import from withings - grp 297'
+  body.weight 165.35
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.85
+
+2020-11-05 00:00:00 r 'import from withings - grp 300'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-11-05 08:08:00 r 'import from withings - grp 299'
+  body.weight 165.77
+  body.fat-mass 21.54
+  body.muscle-mass 132.61
+  body.water 99.45
+  body.bone-mass 66.29
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.23
+
+2020-11-06 00:00:00 r 'import from withings - grp 302'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-11-06 08:05:00 r 'import from withings - grp 301'
+  body.weight 164.91
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.48
+
+2020-11-07 00:00:00 r 'import from withings - grp 304'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-11-07 07:56:00 r 'import from withings - grp 303'
+  body.weight 165.68
+  body.fat-mass 21.52
+  body.muscle-mass 132.54
+  body.water 99.41
+  body.bone-mass 66.27
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.16
+
+2020-11-08 00:00:00 r 'import from withings - grp 306'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2020-11-08 07:45:00 r 'import from withings - grp 305'
+  body.weight 166.03
+  body.fat-mass 21.58
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.45
+
+2020-11-09 00:00:00 r 'import from withings - grp 308'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-11-09 08:11:00 r 'import from withings - grp 307'
+  body.weight 165.19
+  body.fat-mass 21.47
+  body.muscle-mass 132.14
+  body.water 99.1
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.72
+
+2020-11-10 00:00:00 r 'import from withings - grp 310'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-11-10 07:47:00 r 'import from withings - grp 309'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2020-11-11 00:00:00 r 'import from withings - grp 312'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-11-11 07:58:00 r 'import from withings - grp 311'
+  body.weight 164.99
+  body.fat-mass 21.43
+  body.muscle-mass 131.99
+  body.water 98.99
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.56
+
+2020-11-12 00:00:00 r 'import from withings - grp 314'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2020-11-12 08:04:00 r 'import from withings - grp 313'
+  body.weight 164.99
+  body.fat-mass 21.43
+  body.muscle-mass 131.99
+  body.water 98.99
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.56
+
+2020-11-13 00:00:00 r 'import from withings - grp 316'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-11-13 07:52:00 r 'import from withings - grp 315'
+  body.weight 166.43
+  body.fat-mass 21.63
+  body.muscle-mass 133.14
+  body.water 99.85
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.8
+
+2020-11-14 00:00:00 r 'import from withings - grp 318'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2020-11-14 08:09:00 r 'import from withings - grp 317'
+  body.weight 164.95
+  body.fat-mass 21.43
+  body.muscle-mass 131.95
+  body.water 98.97
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.52
+
+2020-11-15 00:00:00 r 'import from withings - grp 320'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-11-15 07:51:00 r 'import from withings - grp 319'
+  body.weight 165.81
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.27
+
+2020-11-16 00:00:00 r 'import from withings - grp 322'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2020-11-16 07:52:00 r 'import from withings - grp 321'
+  body.weight 165.5
+  body.fat-mass 21.5
+  body.muscle-mass 132.39
+  body.water 99.3
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.01
+
+2020-11-17 00:00:00 r 'import from withings - grp 324'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-11-17 08:01:00 r 'import from withings - grp 323'
+  body.weight 164.77
+  body.fat-mass 21.41
+  body.muscle-mass 131.81
+  body.water 98.86
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.37
+
+2020-11-18 00:00:00 r 'import from withings - grp 326'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2020-11-18 07:56:00 r 'import from withings - grp 325'
+  body.weight 165.1
+  body.fat-mass 21.45
+  body.muscle-mass 132.08
+  body.water 99.05
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.65
+
+2020-11-19 00:00:00 r 'import from withings - grp 328'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-11-19 08:01:00 r 'import from withings - grp 327'
+  body.weight 166.05
+  body.fat-mass 21.58
+  body.muscle-mass 132.83
+  body.water 99.63
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.47
+
+2020-11-20 00:00:00 r 'import from withings - grp 330'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-11-20 08:10:00 r 'import from withings - grp 329'
+  body.weight 164.84
+  body.fat-mass 21.43
+  body.muscle-mass 131.86
+  body.water 98.9
+  body.bone-mass 65.92
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.41
+
+2020-11-21 00:00:00 r 'import from withings - grp 332'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-11-21 08:02:00 r 'import from withings - grp 331'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2020-11-22 00:00:00 r 'import from withings - grp 334'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-11-22 07:53:00 r 'import from withings - grp 333'
+  body.weight 164.99
+  body.fat-mass 21.43
+  body.muscle-mass 131.99
+  body.water 98.99
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.56
+
+2020-11-23 00:00:00 r 'import from withings - grp 336'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-11-23 07:50:00 r 'import from withings - grp 335'
+  body.weight 165.92
+  body.fat-mass 21.56
+  body.muscle-mass 132.72
+  body.water 99.54
+  body.bone-mass 66.36
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.36
+
+2020-11-24 00:00:00 r 'import from withings - grp 338'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2020-11-24 08:03:00 r 'import from withings - grp 337'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2020-11-25 00:00:00 r 'import from withings - grp 340'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2020-11-25 08:14:00 r 'import from withings - grp 339'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2020-11-26 00:00:00 r 'import from withings - grp 342'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2020-11-26 08:13:00 r 'import from withings - grp 341'
+  body.weight 165.17
+  body.fat-mass 21.45
+  body.muscle-mass 132.12
+  body.water 99.1
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.72
+
+2020-11-27 00:00:00 r 'import from withings - grp 344'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-11-27 07:53:00 r 'import from withings - grp 343'
+  body.weight 165.52
+  body.fat-mass 21.52
+  body.muscle-mass 132.41
+  body.water 99.3
+  body.bone-mass 66.2
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.01
+
+2020-11-28 00:00:00 r 'import from withings - grp 346'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-11-28 08:07:00 r 'import from withings - grp 345'
+  body.weight 165.99
+  body.fat-mass 21.56
+  body.muscle-mass 132.78
+  body.water 99.58
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.42
+
+2020-11-29 00:00:00 r 'import from withings - grp 348'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2020-11-29 07:46:00 r 'import from withings - grp 347'
+  body.weight 166.45
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.82
+
+2020-11-30 00:00:00 r 'import from withings - grp 350'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2020-11-30 07:51:00 r 'import from withings - grp 349'
+  body.weight 166.34
+  body.fat-mass 21.61
+  body.muscle-mass 133.07
+  body.water 99.8
+  body.bone-mass 66.54
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.73
+
+2020-12-01 00:00:00 r 'import from withings - grp 352'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2020-12-01 07:57:00 r 'import from withings - grp 351'
+  body.weight 165.46
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.96
+
+2020-12-02 00:00:00 r 'import from withings - grp 354'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-12-02 08:03:00 r 'import from withings - grp 353'
+  body.weight 166.34
+  body.fat-mass 21.61
+  body.muscle-mass 133.07
+  body.water 99.8
+  body.bone-mass 66.54
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.73
+
+2020-12-03 00:00:00 r 'import from withings - grp 356'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-12-03 07:51:00 r 'import from withings - grp 355'
+  body.weight 165.26
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.79
+
+2020-12-04 00:00:00 r 'import from withings - grp 358'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-12-04 08:01:00 r 'import from withings - grp 357'
+  body.weight 164.95
+  body.fat-mass 21.43
+  body.muscle-mass 131.95
+  body.water 98.97
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.52
+
+2020-12-05 00:00:00 r 'import from withings - grp 359'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2020-12-05 07:57:00 r 'import from withings - grp 360'
+  body.weight 165.17
+  body.fat-mass 21.45
+  body.muscle-mass 132.12
+  body.water 99.1
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.72
+
+2020-12-06 00:00:00 r 'import from withings - grp 362'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2020-12-06 07:51:00 r 'import from withings - grp 361'
+  body.weight 164.51
+  body.fat-mass 21.38
+  body.muscle-mass 131.59
+  body.water 98.7
+  body.bone-mass 65.79
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.12
+
+2020-12-07 00:00:00 r 'import from withings - grp 363'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2020-12-07 07:50:00 r 'import from withings - grp 364'
+  body.weight 164.71
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.3
+
+2020-12-08 00:00:00 r 'import from withings - grp 366'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-12-08 07:53:00 r 'import from withings - grp 365'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2020-12-09 00:00:00 r 'import from withings - grp 368'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2020-12-09 08:09:00 r 'import from withings - grp 367'
+  body.weight 165.02
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.56
+
+2020-12-10 00:00:00 r 'import from withings - grp 370'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-12-10 08:02:00 r 'import from withings - grp 369'
+  body.weight 164.77
+  body.fat-mass 21.41
+  body.muscle-mass 131.81
+  body.water 98.86
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.37
+
+2020-12-11 00:00:00 r 'import from withings - grp 372'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2020-12-11 07:54:00 r 'import from withings - grp 371'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2020-12-12 00:00:00 r 'import from withings - grp 374'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2020-12-12 08:01:00 r 'import from withings - grp 373'
+  body.weight 166.69
+  body.fat-mass 21.65
+  body.muscle-mass 133.34
+  body.water 100.0
+  body.bone-mass 66.67
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.04
+
+2020-12-13 00:00:00 r 'import from withings - grp 376'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2020-12-13 08:06:00 r 'import from withings - grp 375'
+  body.weight 164.71
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.3
+
+2020-12-14 00:00:00 r 'import from withings - grp 378'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2020-12-14 07:48:00 r 'import from withings - grp 377'
+  body.weight 165.37
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.87
+
+2020-12-15 00:00:00 r 'import from withings - grp 380'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-12-15 07:58:00 r 'import from withings - grp 379'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2020-12-16 00:00:00 r 'import from withings - grp 382'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2020-12-16 07:54:00 r 'import from withings - grp 381'
+  body.weight 166.23
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.62
+
+2020-12-17 00:00:00 r 'import from withings - grp 384'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-12-17 07:55:00 r 'import from withings - grp 383'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2020-12-18 00:00:00 r 'import from withings - grp 386'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2020-12-18 08:03:00 r 'import from withings - grp 385'
+  body.weight 165.46
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.96
+
+2020-12-19 00:00:00 r 'import from withings - grp 387'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2020-12-19 07:59:00 r 'import from withings - grp 388'
+  body.weight 166.14
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.56
+
+2020-12-20 00:00:00 r 'import from withings - grp 390'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2020-12-20 08:12:00 r 'import from withings - grp 389'
+  body.weight 166.05
+  body.fat-mass 21.58
+  body.muscle-mass 132.83
+  body.water 99.63
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.47
+
+2020-12-21 00:00:00 r 'import from withings - grp 392'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-12-21 08:13:00 r 'import from withings - grp 391'
+  body.weight 166.25
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.65
+
+2020-12-22 00:00:00 r 'import from withings - grp 394'
+  body.heart.rate 81
+  body.heart.pwv 5.5
+
+2020-12-22 07:54:00 r 'import from withings - grp 393'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2020-12-23 00:00:00 r 'import from withings - grp 396'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2020-12-23 07:46:00 r 'import from withings - grp 395'
+  body.weight 166.18
+  body.fat-mass 21.58
+  body.muscle-mass 132.94
+  body.water 99.69
+  body.bone-mass 66.47
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.6
+
+2020-12-24 00:00:00 r 'import from withings - grp 398'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2020-12-24 08:10:00 r 'import from withings - grp 397'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2020-12-25 00:00:00 r 'import from withings - grp 400'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2020-12-25 08:14:00 r 'import from withings - grp 399'
+  body.weight 165.68
+  body.fat-mass 21.52
+  body.muscle-mass 132.54
+  body.water 99.41
+  body.bone-mass 66.27
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.16
+
+2020-12-26 00:00:00 r 'import from withings - grp 402'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2020-12-26 07:49:00 r 'import from withings - grp 401'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2020-12-27 00:00:00 r 'import from withings - grp 404'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-12-27 08:12:00 r 'import from withings - grp 403'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2020-12-28 00:00:00 r 'import from withings - grp 406'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-12-28 08:01:00 r 'import from withings - grp 405'
+  body.weight 165.3
+  body.fat-mass 21.47
+  body.muscle-mass 132.23
+  body.water 99.16
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.83
+
+2020-12-29 00:00:00 r 'import from withings - grp 408'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-12-29 08:01:00 r 'import from withings - grp 407'
+  body.weight 165.63
+  body.fat-mass 21.52
+  body.muscle-mass 132.5
+  body.water 99.36
+  body.bone-mass 66.25
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.12
+
+2020-12-30 00:00:00 r 'import from withings - grp 409'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2020-12-30 07:55:00 r 'import from withings - grp 410'
+  body.weight 166.23
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.62
+
+2020-12-31 00:00:00 r 'import from withings - grp 412'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2020-12-31 08:14:00 r 'import from withings - grp 411'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-01-01 00:00:00 r 'import from withings - grp 413'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-01-01 07:52:00 r 'import from withings - grp 414'
+  body.weight 164.86
+  body.fat-mass 21.43
+  body.muscle-mass 131.88
+  body.water 98.9
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.43
+
+2021-01-02 00:00:00 r 'import from withings - grp 416'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2021-01-02 07:56:00 r 'import from withings - grp 415'
+  body.weight 164.91
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.48
+
+2021-01-03 00:00:00 r 'import from withings - grp 418'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2021-01-03 07:52:00 r 'import from withings - grp 417'
+  body.weight 164.66
+  body.fat-mass 21.38
+  body.muscle-mass 131.73
+  body.water 98.79
+  body.bone-mass 65.85
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.28
+
+2021-01-04 00:00:00 r 'import from withings - grp 420'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-01-04 08:11:00 r 'import from withings - grp 419'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-01-05 00:00:00 r 'import from withings - grp 422'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-01-05 07:45:00 r 'import from withings - grp 421'
+  body.weight 164.93
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.5
+
+2021-01-06 00:00:00 r 'import from withings - grp 424'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-01-06 08:10:00 r 'import from withings - grp 423'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2021-01-07 00:00:00 r 'import from withings - grp 425'
+  body.heart.rate 80
+  body.heart.pwv 5.5
+
+2021-01-07 08:08:00 r 'import from withings - grp 426'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2021-01-08 00:00:00 r 'import from withings - grp 428'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2021-01-08 08:04:00 r 'import from withings - grp 427'
+  body.weight 165.99
+  body.fat-mass 21.56
+  body.muscle-mass 132.78
+  body.water 99.58
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.42
+
+2021-01-09 00:00:00 r 'import from withings - grp 429'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2021-01-09 07:53:00 r 'import from withings - grp 430'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-01-10 00:00:00 r 'import from withings - grp 432'
+  body.heart.rate 77
+  body.heart.pwv 5.6
+
+2021-01-10 07:51:00 r 'import from withings - grp 431'
+  body.weight 166.67
+  body.fat-mass 21.65
+  body.muscle-mass 133.34
+  body.water 100.0
+  body.bone-mass 66.67
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.02
+
+2021-01-11 00:00:00 r 'import from withings - grp 434'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-01-11 08:09:00 r 'import from withings - grp 433'
+  body.weight 165.83
+  body.fat-mass 21.54
+  body.muscle-mass 132.65
+  body.water 99.49
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.29
+
+2021-01-12 00:00:00 r 'import from withings - grp 436'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2021-01-12 07:48:00 r 'import from withings - grp 435'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2021-01-13 00:00:00 r 'import from withings - grp 438'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-01-13 07:47:00 r 'import from withings - grp 437'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2021-01-14 00:00:00 r 'import from withings - grp 440'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-01-14 08:06:00 r 'import from withings - grp 439'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2021-01-15 00:00:00 r 'import from withings - grp 442'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2021-01-15 07:47:00 r 'import from withings - grp 441'
+  body.weight 166.21
+  body.fat-mass 21.61
+  body.muscle-mass 132.96
+  body.water 99.71
+  body.bone-mass 66.47
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.6
+
+2021-01-16 00:00:00 r 'import from withings - grp 444'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-01-16 08:14:00 r 'import from withings - grp 443'
+  body.weight 164.93
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.5
+
+2021-01-17 00:00:00 r 'import from withings - grp 446'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2021-01-17 08:08:00 r 'import from withings - grp 445'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2021-01-18 00:00:00 r 'import from withings - grp 448'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-01-18 07:49:00 r 'import from withings - grp 447'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-01-19 00:00:00 r 'import from withings - grp 450'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2021-01-19 08:05:00 r 'import from withings - grp 449'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2021-01-20 00:00:00 r 'import from withings - grp 452'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-01-20 08:03:00 r 'import from withings - grp 451'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2021-01-21 00:00:00 r 'import from withings - grp 453'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-01-21 07:46:00 r 'import from withings - grp 454'
+  body.weight 166.45
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.82
+
+2021-01-22 00:00:00 r 'import from withings - grp 455'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-01-22 08:08:00 r 'import from withings - grp 456'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2021-01-23 00:00:00 r 'import from withings - grp 458'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-01-23 07:48:00 r 'import from withings - grp 457'
+  body.weight 164.88
+  body.fat-mass 21.43
+  body.muscle-mass 131.9
+  body.water 98.92
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.45
+
+2021-01-24 00:00:00 r 'import from withings - grp 460'
+  body.heart.rate 77
+  body.heart.pwv 5.6
+
+2021-01-24 08:02:00 r 'import from withings - grp 459'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2021-01-25 00:00:00 r 'import from withings - grp 461'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2021-01-25 07:47:00 r 'import from withings - grp 462'
+  body.weight 166.6
+  body.fat-mass 21.65
+  body.muscle-mass 133.27
+  body.water 99.96
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.95
+
+2021-01-26 00:00:00 r 'import from withings - grp 464'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-01-26 08:10:00 r 'import from withings - grp 463'
+  body.weight 166.07
+  body.fat-mass 21.58
+  body.muscle-mass 132.85
+  body.water 99.63
+  body.bone-mass 66.43
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.49
+
+2021-01-27 00:00:00 r 'import from withings - grp 466'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-01-27 08:03:00 r 'import from withings - grp 465'
+  body.weight 164.97
+  body.fat-mass 21.43
+  body.muscle-mass 131.97
+  body.water 98.97
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.54
+
+2021-01-28 00:00:00 r 'import from withings - grp 467'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-01-28 08:03:00 r 'import from withings - grp 468'
+  body.weight 164.73
+  body.fat-mass 21.41
+  body.muscle-mass 131.77
+  body.water 98.83
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.32
+
+2021-01-29 00:00:00 r 'import from withings - grp 469'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-01-29 07:46:00 r 'import from withings - grp 470'
+  body.weight 165.57
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.05
+
+2021-01-30 00:00:00 r 'import from withings - grp 471'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-01-30 08:10:00 r 'import from withings - grp 472'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2021-01-31 00:00:00 r 'import from withings - grp 474'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2021-01-31 08:14:00 r 'import from withings - grp 473'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2021-02-01 00:00:00 r 'import from withings - grp 475'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2021-02-01 07:58:00 r 'import from withings - grp 476'
+  body.weight 164.88
+  body.fat-mass 21.43
+  body.muscle-mass 131.9
+  body.water 98.92
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.45
+
+2021-02-02 00:00:00 r 'import from withings - grp 478'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2021-02-02 08:04:00 r 'import from withings - grp 477'
+  body.weight 166.1
+  body.fat-mass 21.58
+  body.muscle-mass 132.87
+  body.water 99.65
+  body.bone-mass 66.43
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.51
+
+2021-02-03 00:00:00 r 'import from withings - grp 480'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-02-03 07:56:00 r 'import from withings - grp 479'
+  body.weight 165.81
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.27
+
+2021-02-04 00:00:00 r 'import from withings - grp 481'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2021-02-04 08:03:00 r 'import from withings - grp 482'
+  body.weight 164.88
+  body.fat-mass 21.43
+  body.muscle-mass 131.9
+  body.water 98.92
+  body.bone-mass 65.94
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.45
+
+2021-02-05 00:00:00 r 'import from withings - grp 484'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-02-05 08:01:00 r 'import from withings - grp 483'
+  body.weight 166.36
+  body.fat-mass 21.61
+  body.muscle-mass 133.07
+  body.water 99.8
+  body.bone-mass 66.54
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.76
+
+2021-02-06 00:00:00 r 'import from withings - grp 485'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-02-06 08:01:00 r 'import from withings - grp 486'
+  body.weight 164.66
+  body.fat-mass 21.38
+  body.muscle-mass 131.73
+  body.water 98.79
+  body.bone-mass 65.85
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.28
+
+2021-02-07 00:00:00 r 'import from withings - grp 488'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2021-02-07 07:53:00 r 'import from withings - grp 487'
+  body.weight 164.57
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.19
+
+2021-02-08 00:00:00 r 'import from withings - grp 490'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-02-08 08:04:00 r 'import from withings - grp 489'
+  body.weight 165.32
+  body.fat-mass 21.47
+  body.muscle-mass 132.26
+  body.water 99.19
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.85
+
+2021-02-09 00:00:00 r 'import from withings - grp 492'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-02-09 07:56:00 r 'import from withings - grp 491'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-02-10 00:00:00 r 'import from withings - grp 493'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2021-02-10 08:15:00 r 'import from withings - grp 494'
+  body.weight 166.56
+  body.fat-mass 21.65
+  body.muscle-mass 133.25
+  body.water 99.94
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.91
+
+2021-02-11 00:00:00 r 'import from withings - grp 496'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-02-11 08:03:00 r 'import from withings - grp 495'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2021-02-12 00:00:00 r 'import from withings - grp 497'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-02-12 07:58:00 r 'import from withings - grp 498'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2021-02-13 00:00:00 r 'import from withings - grp 499'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-02-13 07:57:00 r 'import from withings - grp 500'
+  body.weight 165.37
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.87
+
+2021-02-14 00:00:00 r 'import from withings - grp 501'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2021-02-14 07:57:00 r 'import from withings - grp 502'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2021-02-15 00:00:00 r 'import from withings - grp 503'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-02-15 07:47:00 r 'import from withings - grp 504'
+  body.weight 165.63
+  body.fat-mass 21.52
+  body.muscle-mass 132.5
+  body.water 99.36
+  body.bone-mass 66.25
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.12
+
+2021-02-16 00:00:00 r 'import from withings - grp 506'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-02-16 08:12:00 r 'import from withings - grp 505'
+  body.weight 164.55
+  body.fat-mass 21.38
+  body.muscle-mass 131.64
+  body.water 98.72
+  body.bone-mass 65.81
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.17
+
+2021-02-17 00:00:00 r 'import from withings - grp 507'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-02-17 07:56:00 r 'import from withings - grp 508'
+  body.weight 164.73
+  body.fat-mass 21.41
+  body.muscle-mass 131.77
+  body.water 98.83
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.32
+
+2021-02-18 00:00:00 r 'import from withings - grp 510'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-02-18 07:48:00 r 'import from withings - grp 509'
+  body.weight 165.35
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.85
+
+2021-02-19 00:00:00 r 'import from withings - grp 512'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-02-19 08:08:00 r 'import from withings - grp 511'
+  body.weight 166.54
+  body.fat-mass 21.65
+  body.muscle-mass 133.23
+  body.water 99.91
+  body.bone-mass 66.6
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.89
+
+2021-02-20 00:00:00 r 'import from withings - grp 514'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2021-02-20 08:04:00 r 'import from withings - grp 513'
+  body.weight 166.05
+  body.fat-mass 21.58
+  body.muscle-mass 132.83
+  body.water 99.63
+  body.bone-mass 66.4
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.47
+
+2021-02-21 00:00:00 r 'import from withings - grp 516'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-02-21 08:14:00 r 'import from withings - grp 515'
+  body.weight 164.62
+  body.fat-mass 21.38
+  body.muscle-mass 131.68
+  body.water 98.77
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.23
+
+2021-02-22 00:00:00 r 'import from withings - grp 518'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2021-02-22 08:10:00 r 'import from withings - grp 517'
+  body.weight 166.58
+  body.fat-mass 21.65
+  body.muscle-mass 133.25
+  body.water 99.94
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.93
+
+2021-02-23 00:00:00 r 'import from withings - grp 519'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2021-02-23 07:53:00 r 'import from withings - grp 520'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-02-24 00:00:00 r 'import from withings - grp 522'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-02-24 07:53:00 r 'import from withings - grp 521'
+  body.weight 165.46
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.96
+
+2021-02-25 00:00:00 r 'import from withings - grp 523'
+  body.heart.rate 77
+  body.heart.pwv 5.4
+
+2021-02-25 07:47:00 r 'import from withings - grp 524'
+  body.weight 164.75
+  body.fat-mass 21.41
+  body.muscle-mass 131.79
+  body.water 98.83
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.34
+
+2021-02-26 00:00:00 r 'import from withings - grp 525'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-02-26 08:09:00 r 'import from withings - grp 526'
+  body.weight 166.29
+  body.fat-mass 21.61
+  body.muscle-mass 133.03
+  body.water 99.76
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.69
+
+2021-02-27 00:00:00 r 'import from withings - grp 527'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-02-27 07:55:00 r 'import from withings - grp 528'
+  body.weight 165.13
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.68
+
+2021-02-28 00:00:00 r 'import from withings - grp 530'
+  body.heart.rate 81
+  body.heart.pwv 5.5
+
+2021-02-28 07:49:00 r 'import from withings - grp 529'
+  body.weight 165.3
+  body.fat-mass 21.47
+  body.muscle-mass 132.23
+  body.water 99.16
+  body.bone-mass 66.12
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.83
+
+2021-03-01 00:00:00 r 'import from withings - grp 531'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2021-03-01 08:08:00 r 'import from withings - grp 532'
+  body.weight 164.97
+  body.fat-mass 21.43
+  body.muscle-mass 131.97
+  body.water 98.97
+  body.bone-mass 65.98
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.54
+
+2021-03-02 00:00:00 r 'import from withings - grp 534'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-03-02 07:51:00 r 'import from withings - grp 533'
+  body.weight 164.6
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.21
+
+2021-03-03 00:00:00 r 'import from withings - grp 536'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-03-03 08:01:00 r 'import from withings - grp 535'
+  body.weight 164.8
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.39
+
+2021-03-04 00:00:00 r 'import from withings - grp 538'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-03-04 07:55:00 r 'import from withings - grp 537'
+  body.weight 165.77
+  body.fat-mass 21.54
+  body.muscle-mass 132.61
+  body.water 99.45
+  body.bone-mass 66.29
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.23
+
+2021-03-05 00:00:00 r 'import from withings - grp 539'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-03-05 07:57:00 r 'import from withings - grp 540'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2021-03-06 00:00:00 r 'import from withings - grp 542'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-03-06 08:12:00 r 'import from withings - grp 541'
+  body.weight 165.99
+  body.fat-mass 21.56
+  body.muscle-mass 132.78
+  body.water 99.58
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.42
+
+2021-03-07 00:00:00 r 'import from withings - grp 543'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-03-07 08:00:00 r 'import from withings - grp 544'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2021-03-08 00:00:00 r 'import from withings - grp 546'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-03-08 07:56:00 r 'import from withings - grp 545'
+  body.weight 166.29
+  body.fat-mass 21.61
+  body.muscle-mass 133.03
+  body.water 99.76
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.69
+
+2021-03-09 00:00:00 r 'import from withings - grp 547'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-03-09 08:07:00 r 'import from withings - grp 548'
+  body.weight 166.23
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.62
+
+2021-03-10 00:00:00 r 'import from withings - grp 550'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2021-03-10 08:04:00 r 'import from withings - grp 549'
+  body.weight 165.17
+  body.fat-mass 21.45
+  body.muscle-mass 132.12
+  body.water 99.1
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.72
+
+2021-03-11 00:00:00 r 'import from withings - grp 552'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2021-03-11 08:07:00 r 'import from withings - grp 551'
+  body.weight 165.92
+  body.fat-mass 21.56
+  body.muscle-mass 132.72
+  body.water 99.54
+  body.bone-mass 66.36
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.36
+
+2021-03-12 00:00:00 r 'import from withings - grp 553'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2021-03-12 07:46:00 r 'import from withings - grp 554'
+  body.weight 166.58
+  body.fat-mass 21.65
+  body.muscle-mass 133.25
+  body.water 99.94
+  body.bone-mass 66.62
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.93
+
+2021-03-13 00:00:00 r 'import from withings - grp 555'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-03-13 08:06:00 r 'import from withings - grp 556'
+  body.weight 164.8
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.39
+
+2021-03-14 00:00:00 r 'import from withings - grp 558'
+  body.heart.rate 75
+  body.heart.pwv 5.5
+
+2021-03-14 07:53:00 r 'import from withings - grp 557'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2021-03-15 00:00:00 r 'import from withings - grp 560'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2021-03-15 08:06:00 r 'import from withings - grp 559'
+  body.weight 165.39
+  body.fat-mass 21.5
+  body.muscle-mass 132.3
+  body.water 99.23
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.9
+
+2021-03-16 00:00:00 r 'import from withings - grp 562'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-03-16 08:03:00 r 'import from withings - grp 561'
+  body.weight 166.14
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.56
+
+2021-03-17 00:00:00 r 'import from withings - grp 563'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-03-17 08:14:00 r 'import from withings - grp 564'
+  body.weight 165.96
+  body.fat-mass 21.56
+  body.muscle-mass 132.76
+  body.water 99.56
+  body.bone-mass 66.38
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.4
+
+2021-03-18 00:00:00 r 'import from withings - grp 565'
+  body.heart.rate 81
+  body.heart.pwv 5.5
+
+2021-03-18 07:48:00 r 'import from withings - grp 566'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2021-03-19 00:00:00 r 'import from withings - grp 567'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-03-19 07:47:00 r 'import from withings - grp 568'
+  body.weight 166.32
+  body.fat-mass 21.61
+  body.muscle-mass 133.05
+  body.water 99.78
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.71
+
+2021-03-20 00:00:00 r 'import from withings - grp 570'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2021-03-20 08:09:00 r 'import from withings - grp 569'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2021-03-21 00:00:00 r 'import from withings - grp 572'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2021-03-21 08:05:00 r 'import from withings - grp 571'
+  body.weight 165.5
+  body.fat-mass 21.5
+  body.muscle-mass 132.39
+  body.water 99.3
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.01
+
+2021-03-22 00:00:00 r 'import from withings - grp 574'
+  body.heart.rate 77
+  body.heart.pwv 5.5
+
+2021-03-22 08:15:00 r 'import from withings - grp 573'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-03-23 00:00:00 r 'import from withings - grp 575'
+  body.heart.rate 80
+  body.heart.pwv 5.5
+
+2021-03-23 07:45:00 r 'import from withings - grp 576'
+  body.weight 165.1
+  body.fat-mass 21.45
+  body.muscle-mass 132.08
+  body.water 99.05
+  body.bone-mass 66.03
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.65
+
+2021-03-24 00:00:00 r 'import from withings - grp 578'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-03-24 08:12:00 r 'import from withings - grp 577'
+  body.weight 166.12
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.53
+
+2021-03-25 00:00:00 r 'import from withings - grp 580'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2021-03-25 08:10:00 r 'import from withings - grp 579'
+  body.weight 165.68
+  body.fat-mass 21.52
+  body.muscle-mass 132.54
+  body.water 99.41
+  body.bone-mass 66.27
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.16
+
+2021-03-26 00:00:00 r 'import from withings - grp 582'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-03-26 07:52:00 r 'import from withings - grp 581'
+  body.weight 166.32
+  body.fat-mass 21.61
+  body.muscle-mass 133.05
+  body.water 99.78
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.71
+
+2021-03-27 00:00:00 r 'import from withings - grp 584'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-03-27 07:59:00 r 'import from withings - grp 583'
+  body.weight 165.15
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.7
+
+2021-03-28 00:00:00 r 'import from withings - grp 586'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2021-03-28 08:55:00 r 'import from withings - grp 585'
+  body.weight 164.71
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.3
+
+2021-03-29 00:00:00 r 'import from withings - grp 588'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2021-03-29 07:46:00 r 'import from withings - grp 587'
+  body.weight 165.37
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.87
+
+2021-03-30 00:00:00 r 'import from withings - grp 590'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2021-03-30 08:00:00 r 'import from withings - grp 589'
+  body.weight 165.59
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.07
+
+2021-03-31 00:00:00 r 'import from withings - grp 591'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-03-31 08:03:00 r 'import from withings - grp 592'
+  body.weight 166.47
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.84
+
+2021-04-01 00:00:00 r 'import from withings - grp 594'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-04-01 08:08:00 r 'import from withings - grp 593'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2021-04-02 00:00:00 r 'import from withings - grp 596'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2021-04-02 07:53:00 r 'import from withings - grp 595'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-04-03 00:00:00 r 'import from withings - grp 598'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2021-04-03 07:51:00 r 'import from withings - grp 597'
+  body.weight 166.51
+  body.fat-mass 21.63
+  body.muscle-mass 133.2
+  body.water 99.89
+  body.bone-mass 66.6
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.89
+
+2021-04-04 00:00:00 r 'import from withings - grp 600'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2021-04-04 08:12:00 r 'import from withings - grp 599'
+  body.weight 164.8
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.39
+
+2021-04-05 00:00:00 r 'import from withings - grp 601'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2021-04-05 07:54:00 r 'import from withings - grp 602'
+  body.weight 166.27
+  body.fat-mass 21.61
+  body.muscle-mass 133.0
+  body.water 99.76
+  body.bone-mass 66.49
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.67
+
+2021-04-06 00:00:00 r 'import from withings - grp 604'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2021-04-06 07:58:00 r 'import from withings - grp 603'
+  body.weight 166.21
+  body.fat-mass 21.61
+  body.muscle-mass 132.96
+  body.water 99.71
+  body.bone-mass 66.47
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.6
+
+2021-04-07 00:00:00 r 'import from withings - grp 606'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-04-07 07:56:00 r 'import from withings - grp 605'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-04-08 00:00:00 r 'import from withings - grp 608'
+  body.heart.rate 78
+  body.heart.pwv 5.5
+
+2021-04-08 08:15:00 r 'import from withings - grp 607'
+  body.weight 164.55
+  body.fat-mass 21.38
+  body.muscle-mass 131.64
+  body.water 98.72
+  body.bone-mass 65.81
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.17
+
+2021-04-09 00:00:00 r 'import from withings - grp 610'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-04-09 08:00:00 r 'import from withings - grp 609'
+  body.weight 165.37
+  body.fat-mass 21.5
+  body.muscle-mass 132.28
+  body.water 99.21
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.87
+
+2021-04-10 00:00:00 r 'import from withings - grp 612'
+  body.heart.rate 79
+  body.heart.pwv 5.4
+
+2021-04-10 07:59:00 r 'import from withings - grp 611'
+  body.weight 164.71
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.3
+
+2021-04-11 00:00:00 r 'import from withings - grp 614'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2021-04-11 07:54:00 r 'import from withings - grp 613'
+  body.weight 166.38
+  body.fat-mass 21.63
+  body.muscle-mass 133.09
+  body.water 99.83
+  body.bone-mass 66.54
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.76
+
+2021-04-12 00:00:00 r 'import from withings - grp 616'
+  body.heart.rate 84
+  body.heart.pwv 5.4
+
+2021-04-12 07:53:00 r 'import from withings - grp 615'
+  body.weight 164.8
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.39
+
+2021-04-13 00:00:00 r 'import from withings - grp 618'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2021-04-13 07:48:00 r 'import from withings - grp 617'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-04-14 00:00:00 r 'import from withings - grp 620'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-04-14 08:10:00 r 'import from withings - grp 619'
+  body.weight 164.84
+  body.fat-mass 21.43
+  body.muscle-mass 131.86
+  body.water 98.9
+  body.bone-mass 65.92
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.41
+
+2021-04-15 00:00:00 r 'import from withings - grp 621'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-04-15 07:45:00 r 'import from withings - grp 622'
+  body.weight 165.04
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.59
+
+2021-04-16 00:00:00 r 'import from withings - grp 624'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-04-16 07:50:00 r 'import from withings - grp 623'
+  body.weight 164.95
+  body.fat-mass 21.43
+  body.muscle-mass 131.95
+  body.water 98.97
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.52
+
+2021-04-17 00:00:00 r 'import from withings - grp 626'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-04-17 08:06:00 r 'import from withings - grp 625'
+  body.weight 166.01
+  body.fat-mass 21.56
+  body.muscle-mass 132.81
+  body.water 99.6
+  body.bone-mass 66.4
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.45
+
+2021-04-18 00:00:00 r 'import from withings - grp 628'
+  body.heart.rate 81
+  body.heart.pwv 5.6
+
+2021-04-18 08:06:00 r 'import from withings - grp 627'
+  body.weight 165.19
+  body.fat-mass 21.47
+  body.muscle-mass 132.14
+  body.water 99.1
+  body.bone-mass 66.07
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.72
+
+2021-04-19 00:00:00 r 'import from withings - grp 630'
+  body.heart.rate 76
+  body.heart.pwv 5.4
+
+2021-04-19 08:15:00 r 'import from withings - grp 629'
+  body.weight 165.61
+  body.fat-mass 21.52
+  body.muscle-mass 132.48
+  body.water 99.36
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.09
+
+2021-04-20 00:00:00 r 'import from withings - grp 632'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-04-20 07:56:00 r 'import from withings - grp 631'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2021-04-21 00:00:00 r 'import from withings - grp 634'
+  body.heart.rate 82
+  body.heart.pwv 5.5
+
+2021-04-21 08:00:00 r 'import from withings - grp 633'
+  body.weight 166.25
+  body.fat-mass 21.61
+  body.muscle-mass 132.98
+  body.water 99.74
+  body.bone-mass 66.49
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.65
+
+2021-04-22 00:00:00 r 'import from withings - grp 636'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-04-22 07:50:00 r 'import from withings - grp 635'
+  body.weight 165.59
+  body.fat-mass 21.52
+  body.muscle-mass 132.45
+  body.water 99.34
+  body.bone-mass 66.23
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.07
+
+2021-04-23 00:00:00 r 'import from withings - grp 638'
+  body.heart.rate 80
+  body.heart.pwv 5.6
+
+2021-04-23 08:08:00 r 'import from withings - grp 637'
+  body.weight 166.4
+  body.fat-mass 21.63
+  body.muscle-mass 133.11
+  body.water 99.83
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.78
+
+2021-04-24 00:00:00 r 'import from withings - grp 639'
+  body.heart.rate 82
+  body.heart.pwv 5.6
+
+2021-04-24 07:56:00 r 'import from withings - grp 640'
+  body.weight 166.1
+  body.fat-mass 21.58
+  body.muscle-mass 132.87
+  body.water 99.65
+  body.bone-mass 66.43
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.51
+
+2021-04-25 00:00:00 r 'import from withings - grp 642'
+  body.heart.rate 76
+  body.heart.pwv 5.6
+
+2021-04-25 07:47:00 r 'import from withings - grp 641'
+  body.weight 165.81
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.27
+
+2021-04-26 00:00:00 r 'import from withings - grp 644'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-04-26 07:48:00 r 'import from withings - grp 643'
+  body.weight 164.6
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.21
+
+2021-04-27 00:00:00 r 'import from withings - grp 646'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2021-04-27 08:15:00 r 'import from withings - grp 645'
+  body.weight 166.32
+  body.fat-mass 21.61
+  body.muscle-mass 133.05
+  body.water 99.78
+  body.bone-mass 66.51
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.71
+
+2021-04-28 00:00:00 r 'import from withings - grp 648'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-04-28 07:55:00 r 'import from withings - grp 647'
+  body.weight 164.82
+  body.fat-mass 21.41
+  body.muscle-mass 131.84
+  body.water 98.88
+  body.bone-mass 65.92
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.41
+
+2021-04-29 00:00:00 r 'import from withings - grp 650'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-04-29 08:13:00 r 'import from withings - grp 649'
+  body.weight 164.69
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.28
+
+2021-04-30 00:00:00 r 'import from withings - grp 652'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2021-04-30 07:49:00 r 'import from withings - grp 651'
+  body.weight 164.84
+  body.fat-mass 21.43
+  body.muscle-mass 131.86
+  body.water 98.9
+  body.bone-mass 65.92
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.41
+
+2021-05-01 00:00:00 r 'import from withings - grp 653'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2021-05-01 07:52:00 r 'import from withings - grp 654'
+  body.weight 165.15
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.7
+
+2021-05-02 00:00:00 r 'import from withings - grp 656'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2021-05-02 08:04:00 r 'import from withings - grp 655'
+  body.weight 166.47
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.84
+
+2021-05-03 00:00:00 r 'import from withings - grp 658'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-05-03 08:02:00 r 'import from withings - grp 657'
+  body.weight 164.77
+  body.fat-mass 21.41
+  body.muscle-mass 131.81
+  body.water 98.86
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.37
+
+2021-05-04 00:00:00 r 'import from withings - grp 660'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-05-04 07:57:00 r 'import from withings - grp 659'
+  body.weight 165.17
+  body.fat-mass 21.45
+  body.muscle-mass 132.12
+  body.water 99.1
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.72
+
+2021-05-05 00:00:00 r 'import from withings - grp 662'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-05-05 08:13:00 r 'import from withings - grp 661'
+  body.weight 164.95
+  body.fat-mass 21.43
+  body.muscle-mass 131.95
+  body.water 98.97
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.52
+
+2021-05-06 00:00:00 r 'import from withings - grp 663'
+  body.heart.rate 75
+  body.heart.pwv 5.6
+
+2021-05-06 08:10:00 r 'import from withings - grp 664'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2021-05-07 00:00:00 r 'import from withings - grp 666'
+  body.heart.rate 77
+  body.heart.pwv 5.6
+
+2021-05-07 07:52:00 r 'import from withings - grp 665'
+  body.weight 164.57
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.19
+
+2021-05-08 00:00:00 r 'import from withings - grp 667'
+  body.heart.rate 83
+  body.heart.pwv 5.5
+
+2021-05-08 08:12:00 r 'import from withings - grp 668'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2021-05-09 00:00:00 r 'import from withings - grp 669'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2021-05-09 08:13:00 r 'import from withings - grp 670'
+  body.weight 165.79
+  body.fat-mass 21.54
+  body.muscle-mass 132.63
+  body.water 99.47
+  body.bone-mass 66.31
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.25
+
+2021-05-10 00:00:00 r 'import from withings - grp 671'
+  body.heart.rate 81
+  body.heart.pwv 5.4
+
+2021-05-10 08:15:00 r 'import from withings - grp 672'
+  body.weight 165.43
+  body.fat-mass 21.5
+  body.muscle-mass 132.34
+  body.water 99.25
+  body.bone-mass 66.16
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.94
+
+2021-05-11 00:00:00 r 'import from withings - grp 674'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-05-11 07:57:00 r 'import from withings - grp 673'
+  body.weight 166.47
+  body.fat-mass 21.63
+  body.muscle-mass 133.16
+  body.water 99.87
+  body.bone-mass 66.58
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.84
+
+2021-05-12 00:00:00 r 'import from withings - grp 676'
+  body.heart.rate 75
+  body.heart.pwv 5.4
+
+2021-05-12 07:59:00 r 'import from withings - grp 675'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-05-13 00:00:00 r 'import from withings - grp 678'
+  body.heart.rate 84
+  body.heart.pwv 5.5
+
+2021-05-13 08:02:00 r 'import from withings - grp 677'
+  body.weight 164.93
+  body.fat-mass 21.43
+  body.muscle-mass 131.92
+  body.water 98.94
+  body.bone-mass 65.96
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.5
+
+2021-05-14 00:00:00 r 'import from withings - grp 680'
+  body.heart.rate 78
+  body.heart.pwv 5.4
+
+2021-05-14 08:11:00 r 'import from withings - grp 679'
+  body.weight 165.46
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.96
+
+2021-05-15 00:00:00 r 'import from withings - grp 682'
+  body.heart.rate 79
+  body.heart.pwv 5.5
+
+2021-05-15 08:06:00 r 'import from withings - grp 681'
+  body.weight 166.21
+  body.fat-mass 21.61
+  body.muscle-mass 132.96
+  body.water 99.71
+  body.bone-mass 66.47
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.6
+
+2021-05-16 00:00:00 r 'import from withings - grp 684'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-05-16 07:51:00 r 'import from withings - grp 683'
+  body.weight 165.04
+  body.fat-mass 21.45
+  body.muscle-mass 132.01
+  body.water 99.01
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.59
+
+2021-05-17 00:00:00 r 'import from withings - grp 685'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-05-17 07:55:00 r 'import from withings - grp 686'
+  body.weight 165.39
+  body.fat-mass 21.5
+  body.muscle-mass 132.3
+  body.water 99.23
+  body.bone-mass 66.14
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.9
+
+2021-05-18 00:00:00 r 'import from withings - grp 688'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2021-05-18 08:00:00 r 'import from withings - grp 687'
+  body.weight 165.15
+  body.fat-mass 21.45
+  body.muscle-mass 132.1
+  body.water 99.08
+  body.bone-mass 66.05
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.7
+
+2021-05-19 00:00:00 r 'import from withings - grp 690'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2021-05-19 08:00:00 r 'import from withings - grp 689'
+  body.weight 166.71
+  body.fat-mass 21.67
+  body.muscle-mass 133.36
+  body.water 100.02
+  body.bone-mass 66.67
+  body.fat-ratio 13.0
+  body.fat-free-mass 145.04
+
+2021-05-20 00:00:00 r 'import from withings - grp 692'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-05-20 07:48:00 r 'import from withings - grp 691'
+  body.weight 166.69
+  body.fat-mass 21.65
+  body.muscle-mass 133.34
+  body.water 100.0
+  body.bone-mass 66.67
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.04
+
+2021-05-21 00:00:00 r 'import from withings - grp 694'
+  body.heart.rate 85
+  body.heart.pwv 5.5
+
+2021-05-21 07:47:00 r 'import from withings - grp 693'
+  body.weight 166.16
+  body.fat-mass 21.58
+  body.muscle-mass 132.92
+  body.water 99.69
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.58
+
+2021-05-22 00:00:00 r 'import from withings - grp 696'
+  body.heart.rate 83
+  body.heart.pwv 5.6
+
+2021-05-22 07:51:00 r 'import from withings - grp 695'
+  body.weight 166.51
+  body.fat-mass 21.63
+  body.muscle-mass 133.2
+  body.water 99.89
+  body.bone-mass 66.6
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.89
+
+2021-05-23 00:00:00 r 'import from withings - grp 698'
+  body.heart.rate 80
+  body.heart.pwv 5.4
+
+2021-05-23 07:53:00 r 'import from withings - grp 697'
+  body.weight 166.12
+  body.fat-mass 21.58
+  body.muscle-mass 132.89
+  body.water 99.67
+  body.bone-mass 66.45
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.53
+
+2021-05-24 00:00:00 r 'import from withings - grp 700'
+  body.heart.rate 85
+  body.heart.pwv 5.6
+
+2021-05-24 08:08:00 r 'import from withings - grp 699'
+  body.weight 165.06
+  body.fat-mass 21.45
+  body.muscle-mass 132.03
+  body.water 99.03
+  body.bone-mass 66.01
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.61
+
+2021-05-25 00:00:00 r 'import from withings - grp 702'
+  body.heart.rate 78
+  body.heart.pwv 5.6
+
+2021-05-25 07:49:00 r 'import from withings - grp 701'
+  body.weight 165.85
+  body.fat-mass 21.54
+  body.muscle-mass 132.67
+  body.water 99.49
+  body.bone-mass 66.34
+  body.fat-ratio 12.99
+  body.fat-free-mass 144.31
+
+2021-05-26 00:00:00 r 'import from withings - grp 704'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-05-26 07:49:00 r 'import from withings - grp 703'
+  body.weight 164.69
+  body.fat-mass 21.41
+  body.muscle-mass 131.75
+  body.water 98.81
+  body.bone-mass 65.87
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.28
+
+2021-05-27 00:00:00 r 'import from withings - grp 706'
+  body.heart.rate 82
+  body.heart.pwv 5.4
+
+2021-05-27 08:07:00 r 'import from withings - grp 705'
+  body.weight 166.43
+  body.fat-mass 21.63
+  body.muscle-mass 133.14
+  body.water 99.85
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.8
+
+2021-05-28 00:00:00 r 'import from withings - grp 707'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-05-28 08:07:00 r 'import from withings - grp 708'
+  body.weight 165.48
+  body.fat-mass 21.5
+  body.muscle-mass 132.37
+  body.water 99.27
+  body.bone-mass 66.18
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.98
+
+2021-05-29 00:00:00 r 'import from withings - grp 710'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-05-29 08:14:00 r 'import from withings - grp 709'
+  body.weight 166.65
+  body.fat-mass 21.65
+  body.muscle-mass 133.31
+  body.water 99.98
+  body.bone-mass 66.65
+  body.fat-ratio 12.99
+  body.fat-free-mass 145.0
+
+2021-05-30 00:00:00 r 'import from withings - grp 712'
+  body.heart.rate 83
+  body.heart.pwv 5.4
+
+2021-05-30 08:06:00 r 'import from withings - grp 711'
+  body.weight 164.51
+  body.fat-mass 21.38
+  body.muscle-mass 131.59
+  body.water 98.7
+  body.bone-mass 65.79
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.12
+
+2021-05-31 00:00:00 r 'import from withings - grp 714'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-05-31 07:49:00 r 'import from withings - grp 713'
+  body.weight 166.4
+  body.fat-mass 21.63
+  body.muscle-mass 133.11
+  body.water 99.83
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.78
+
+2021-06-01 00:00:00 r 'import from withings - grp 715'
+  body.heart.rate 84
+  body.heart.pwv 5.6
+
+2021-06-01 07:49:00 r 'import from withings - grp 716'
+  body.weight 165.24
+  body.fat-mass 21.47
+  body.muscle-mass 132.19
+  body.water 99.14
+  body.bone-mass 66.09
+  body.fat-ratio 13.0
+  body.fat-free-mass 143.76
+
+2021-06-02 00:00:00 r 'import from withings - grp 718'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-06-02 08:11:00 r 'import from withings - grp 717'
+  body.weight 164.57
+  body.fat-mass 21.38
+  body.muscle-mass 131.66
+  body.water 98.74
+  body.bone-mass 65.83
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.19
+
+2021-06-03 00:00:00 r 'import from withings - grp 720'
+  body.heart.rate 76
+  body.heart.pwv 5.5
+
+2021-06-03 07:48:00 r 'import from withings - grp 719'
+  body.weight 166.43
+  body.fat-mass 21.63
+  body.muscle-mass 133.14
+  body.water 99.85
+  body.bone-mass 66.56
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.8
+
+2021-06-04 00:00:00 r 'import from withings - grp 721'
+  body.heart.rate 79
+  body.heart.pwv 5.6
+
+2021-06-04 07:51:00 r 'import from withings - grp 722'
+  body.weight 165.72
+  body.fat-mass 21.54
+  body.muscle-mass 132.56
+  body.water 99.43
+  body.bone-mass 66.27
+  body.fat-ratio 13.0
+  body.fat-free-mass 144.18
+
+2021-06-05 00:00:00 r 'import from withings - grp 724'
+  body.heart.rate 85
+  body.heart.pwv 5.4
+
+2021-06-05 07:46:00 r 'import from withings - grp 723'
+  body.weight 164.77
+  body.fat-mass 21.41
+  body.muscle-mass 131.81
+  body.water 98.86
+  body.bone-mass 65.9
+  body.fat-ratio 12.99
+  body.fat-free-mass 143.37
