@@ -134,14 +134,23 @@ def metrics_cmd(ctx, filter):
 def list_cmd(ctx, filter, since):
     parser = ctx.obj['parser']
     t = list()
+    missing_metrics = list()
     for r in parser.records:
         if not since or since < r.dt:
             for e in r.entries:
                 if not filter or filter in e.key:
-                    t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
+                    if e.key not in parser.metrics:
+                        if e.key not in missing_metrics:
+                            missing_metrics.append(e.key)
+                    else:
+                        t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
     h = ['date', 'metric', 'value', 'unit']
     t = sorted(t, key=operator.itemgetter(0, 1))
     click.secho(tabulate(t, headers=h))
+    if len(missing_metrics)>0:
+        click.secho(f'missing metrics:', fg='red')
+        for m in sorted(missing_metrics):
+            click.secho(f'  {m}', fg='red')
 
 @click.command('latest')
 @click.pass_context
