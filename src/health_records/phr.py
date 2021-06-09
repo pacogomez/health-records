@@ -24,6 +24,10 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 #meta.desc             record description (narration)
 #meta.line             line of the record in the file
 
+#TODO:
+#  list record metrics individually - default
+#  list records as a whole (all metrics in the record)
+
 @v_args(inline=True)
 class T(Transformer):
     def __init__(self, metrics, records):
@@ -135,24 +139,32 @@ def metrics_cmd(ctx, filter):
 
 @click.command('list')
 @click.argument('filter', required=False)
-@click.option('-s', '--since', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-r', '--record', is_flag=True, default=False)
 @click.pass_context
-def list_cmd(ctx, filter, since):
+def list_cmd(ctx, filter, before, after, record):
     parser = ctx.obj['parser']
     t = list()
     missing_metrics = list()
     for r in parser.records:
-        if not since or since < r.dt:
+        if not after or after < r.dt:
             for e in r.entries:
                 if not filter or filter in e.key:
                     if e.key not in parser.metrics:
                         if e.key not in missing_metrics:
                             missing_metrics.append(e.key)
                     else:
-                        t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
-    h = ['date', 'metric', 'value', 'unit']
-    t = sorted(t, key=operator.itemgetter(0, 1))
-    click.secho(tabulate(t, headers=h))
+                        if record:
+                            click.secho(f'{r}')
+                            break
+                        else:
+                            t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
+
+    if not record:
+        h = ['date', 'metric', 'value', 'unit']
+        t = sorted(t, key=operator.itemgetter(0, 1))
+        click.secho(tabulate(t, headers=h))
     if len(missing_metrics)>0:
         click.secho(f'missing metrics:', fg='red')
         for m in sorted(missing_metrics):
@@ -180,8 +192,8 @@ def delta_cmd(ctx, filename, duplicated):
 @click.command('plot')
 @click.pass_context
 @click.argument('metric', required=True, nargs=-1)
-@click.option('-s', '--since', type=click.DateTime(formats=["%Y-%m-%d"]))
-def plot_cmd(ctx, metric, since):
+@click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
+def plot_cmd(ctx, metric, after):
     parser = ctx.obj['parser']
     dates = dict()
     data = dict()
@@ -194,7 +206,7 @@ def plot_cmd(ctx, metric, since):
     fd = datetime.now()
     ld = datetime.now()
     for r in parser.records:
-        if not since or since < r.dt:
+        if not after or after < r.dt:
             if fd > r.dt: fd = r.dt
             if ld < r.dt: ld = r.dt
             for e in r.entries:
@@ -211,6 +223,7 @@ def plot_cmd(ctx, metric, since):
             plt.gca().xaxis.set_major_locator(MultipleLocator(20))
         for m in metric:
             plt.plot(dates[m], data[m], label=m)
+            # plt.plot_date(dates[m], data[m], label=m)
         plt.gcf().autofmt_xdate()
         plt.legend()
         plt.show()

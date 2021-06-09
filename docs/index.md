@@ -104,10 +104,16 @@ BMI
 ```
 export PHR_FILENAME=sample.phr
 
+# list metric declaration
 phr metrics
 
+# list metric measurements
 phr list
 
+# list records
+phr list -r
+
+# graph metrics
 phr plot body.blood.press.dia body.blood.press.sys body.weight --since 2020-01-01
 ```
 

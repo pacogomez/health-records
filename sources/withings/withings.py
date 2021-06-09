@@ -150,18 +150,18 @@ def main() -> None:
                 k = 'body.weight'
                 v = round(v*p, 2)
             elif m.type == MeasureType.FAT_MASS_WEIGHT:
-                k = 'body.fat-mass'
+                k = 'body.fat.mass'
                 v = round(v*p, 2)
             elif m.type == MeasureType.FAT_FREE_MASS:
-                k = 'body.fat-free-mass'
+                k = 'body.fat-free.mass'
                 v = round(v*p, 2)
             elif m.type == MeasureType.FAT_RATIO:
-                k = 'body.fat-ratio'
+                k = 'body.fat.ratio'
             elif m.type == MeasureType.BONE_MASS:
-                k = 'body.bone-mass'
+                k = 'body.bone.mass'
                 v = round(v*p, 2)
             elif m.type == MeasureType.MUSCLE_MASS:
-                k = 'body.muscle-mass'
+                k = 'body.muscle.mass'
                 v = round(v*p, 2)
             elif m.type == MeasureType.HYDRATION:
                 k = 'body.water'
