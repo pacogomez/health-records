@@ -25,8 +25,7 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 #meta.line             line of the record in the file
 
 #TODO:
-#  list record metrics individually - default
-#  list records as a whole (all metrics in the record)
+#  command to show errors
 
 @v_args(inline=True)
 class T(Transformer):
@@ -223,7 +222,6 @@ def plot_cmd(ctx, metric, after):
             plt.gca().xaxis.set_major_locator(MultipleLocator(20))
         for m in metric:
             plt.plot(dates[m], data[m], label=m)
-            # plt.plot_date(dates[m], data[m], label=m)
         plt.gcf().autofmt_xdate()
         plt.legend()
         plt.show()
