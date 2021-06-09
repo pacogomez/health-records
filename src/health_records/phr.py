@@ -26,6 +26,7 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
 #TODO:
 #  command to show errors
+#  query by expression / query language
 
 @v_args(inline=True)
 class T(Transformer):
