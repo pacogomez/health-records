@@ -138,6 +138,8 @@ def main() -> None:
     p = 2.20462 # pounds in kg
     i = 39.3701 # inches in meter
     n = 0
+
+    #TODO meta metrics
     for g in meas.measuregrps:
         n += 1
         d = g.date.to(meas.timezone).format('YYYY-MM-DD hh:mm:ssa')

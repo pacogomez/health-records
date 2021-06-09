@@ -19,6 +19,11 @@ import collections
 
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
+#TODO: support meta metrics:
+#meta.date             record date
+#meta.desc             record description (narration)
+#meta.line             line of the record in the file
+
 @v_args(inline=True)
 class T(Transformer):
     def __init__(self, metrics, records):
