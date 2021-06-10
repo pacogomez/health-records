@@ -42,12 +42,52 @@
 2020-01-01 open vacc.covid-19.pfizer  dose
 2020-01-01 open vacc.covid-19.moderna dose
 
-2020-01-01 range body.bmi 18.5 24.9 healthy
-2020-01-01 range body.bmi 25   29.9 overweight
+2020-01-01 range body.bmi.healthy    18.5 24.9
+2020-01-01 range body.bmi.overweight 25   29.9
+
+1980-01-01 open meta.id   text
+1980-01-01 open meta.type text
+
+2020-01-01 open acti
+2020-01-01 open acti.moving
+2020-01-01 open acti.moving.time sec
+2020-01-01 open acti.distance
+2020-01-01 open acti.distance.m  m
+
+2000-01-01 open acti.distance
+2000-01-01 open acti.distance.m  m
+2000-01-01 open acti.moving
+2000-01-01 open acti.moving.time sec
+2000-01-01 open acti.suffer
+2000-01-01 open acti.suffer.score score
+2000-01-01 open acti.calories cal
+2000-01-01 open acti.heart
+2000-01-01 open acti.heart.rate bpm
+2000-01-01 open acti.heart.rate.average bpm
+2000-01-01 open acti.heart.rate.max bpm
+2000-01-01 open acti.country text
+2000-01-01 open acti.energy
+2000-01-01 open acti.energy.output kJ
+2000-01-01 open acti.power
+2000-01-01 open acti.power.average W
+
 
 2020-06-07 00:00:00 r 'import from withings - grp 2'
   body.heart.rate 83
   body.heart.pwv 5.5
+
+2021-05-06 14:10:47 r 'Morning Ride'
+  meta.id 'strava-2928472610'
+  meta.type 'ride'
+  acti.distance.m 25030.4
+  acti.moving.time 3921.0
+  acti.suffer.score 92
+  acti.energy.output 801.7
+  acti.power.average 201.4
+  acti.calories 937.4
+  acti.heart.rate.average 152.0
+  acti.heart.rate.max 164
+  acti.country 'United States'
 
 2020-06-07 08:11:00 r 'import from withings - grp 1'
   body.weight 166.34

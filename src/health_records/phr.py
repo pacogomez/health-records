@@ -19,10 +19,9 @@ import collections
 
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
-#TODO: support meta metrics:
+#TODO: support meta metrics, for queries
 #meta.date             record date
 #meta.desc             record description (narration)
-#meta.line             line of the record in the file
 
 #TODO:
 #  command to show errors
@@ -30,9 +29,10 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
 @v_args(inline=True)
 class T(Transformer):
-    def __init__(self, metrics, records):
+    def __init__(self, metrics, records, ranges):
         self.metrics = metrics
         self.records = records
+        self.ranges = ranges
 
     def SIGNED_NUMBER(self, tok):
         return tok.update(value=Decimal(tok))
@@ -46,24 +46,40 @@ class T(Transformer):
         entries = list()
         for i in range(0, len(kwargs), 2):
             entries.append(Entry(kwargs[i].value, kwargs[i+1].value))
-        self.records.append(Record(record_date, record_time, narrative, entries))
+        self.records.append(Record(record_date, record_time, narrative, entries, record_date.line))
         return None
+
+    def range_directive(self, dir_date, item, min, max):
+        self.ranges[item.value] = Range(dir_date, item.value, Decimal(min.value), Decimal(max))
+        return item
 
 class FileParser:
     def __init__(self, filename):
         self.filename = filename
         self.metrics = dict()
         self.records = list()
+        self.ranges = dict()
 
     def parse(self):
         parser = Lark.open_from_package('health_records',
                                         'grammar.lark',
                                         parser='lalr',
-                                        transformer=T(self.metrics, self.records),
+                                        transformer=T(self.metrics, self.records, self.ranges),
                                         propagate_positions=True)
         with open(self.filename, 'r') as f:
             parser.parse(f.read())
         self.records = sorted(self.records, key=operator.attrgetter('dt'))
+
+        for r in self.ranges:
+            self.ranges[r].unit = self.metrics[r[:r.rindex('.')]].unit
+
+
+class Range:
+    def __init__(self, dt, key, min, max):
+        self.dt = dt
+        self.key = key
+        self.min = min
+        self.max = max
 
 class Item:
     def __init__(self, key, name, unit):
@@ -85,12 +101,13 @@ class Entry:
         return false
 
 class Record:
-    def __init__(self, rd, rt, narrative, entries):
+    def __init__(self, rd, rt, narrative, entries, line):
         self.rd = rd
         self.rt = rt
         self.dt = dateutil_parser.parse(f'{rd} {rt}')
         self.narrative = narrative
         self.entries = entries
+        self.line = line
 
     def to_commented(self):
         s = f';{self.dt} r {self.narrative}\n'
@@ -100,6 +117,7 @@ class Record:
 
     def __str__(self):
         s = f'{self.dt} r {self.narrative}\n'
+        s += f'  meta.line {self.line}\n'
         for e in self.entries:
             s += f'  {e}\n'
         return s
@@ -230,11 +248,26 @@ def plot_cmd(ctx, metric, after, before):
         plt.legend()
         plt.show()
 
+@click.command('ranges')
+@click.pass_context
+@click.argument('range', required=False, nargs=-1)
+@click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
+def ranges_cmd(ctx, range, after, before):
+    parser = ctx.obj['parser']
+    t = list()
+    for r in sorted(parser.ranges.items()):
+        if not range or range in r[0]:
+            t.append([r[1].dt, r[0], r[1].min, r[1].max, r[1].unit])
+    h = ['date', 'metric', 'min', 'max', 'unit', 'date']
+    click.secho(tabulate(t, headers=h))
+
 cli.add_command(metrics_cmd)
 cli.add_command(list_cmd)
 cli.add_command(latest_cmd)
 cli.add_command(delta_cmd)
 cli.add_command(plot_cmd)
+cli.add_command(ranges_cmd)
 
 if __name__ == 'health_records.phr':
     cli(obj={}, auto_envvar_prefix='PHR')
