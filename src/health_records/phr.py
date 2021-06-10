@@ -149,17 +149,18 @@ def list_cmd(ctx, filter, before, after, record):
     missing_metrics = list()
     for r in parser.records:
         if not after or after < r.dt:
-            for e in r.entries:
-                if not filter or filter in e.key:
-                    if e.key not in parser.metrics:
-                        if e.key not in missing_metrics:
-                            missing_metrics.append(e.key)
-                    else:
-                        if record:
-                            click.secho(f'{r}')
-                            break
+            if not before or r.dt < before:
+                for e in r.entries:
+                    if not filter or filter in e.key:
+                        if e.key not in parser.metrics:
+                            if e.key not in missing_metrics:
+                                missing_metrics.append(e.key)
                         else:
-                            t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
+                            if record:
+                                click.secho(f'{r}')
+                                break
+                            else:
+                                t.append([r.dt, e.key, e.value, parser.metrics[e.key].unit])
 
     if not record:
         h = ['date', 'metric', 'value', 'unit']
@@ -193,7 +194,8 @@ def delta_cmd(ctx, filename, duplicated):
 @click.pass_context
 @click.argument('metric', required=True, nargs=-1)
 @click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
-def plot_cmd(ctx, metric, after):
+@click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
+def plot_cmd(ctx, metric, after, before):
     parser = ctx.obj['parser']
     dates = dict()
     data = dict()
@@ -207,13 +209,14 @@ def plot_cmd(ctx, metric, after):
     ld = datetime.now()
     for r in parser.records:
         if not after or after < r.dt:
-            if fd > r.dt: fd = r.dt
-            if ld < r.dt: ld = r.dt
-            for e in r.entries:
-                for m in metric:
-                    if m == e.key:
-                        dates[m].append(r.dt)
-                        data[m].append(e.value)
+            if not before or r.dt < before:
+                if fd > r.dt: fd = r.dt
+                if ld < r.dt: ld = r.dt
+                for e in r.entries:
+                    for m in metric:
+                        if m == e.key:
+                            dates[m].append(r.dt)
+                            data[m].append(e.value)
     if fd != ld:
         delta = ld - fd
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
