@@ -101,6 +101,8 @@ class Entry:
         return false
 
 class Record:
+    meta = False
+
     def __init__(self, rd, rt, narrative, entries, line):
         self.rd = rd
         self.rt = rt
@@ -117,7 +119,8 @@ class Record:
 
     def __str__(self):
         s = f'{self.dt} r {self.narrative}\n'
-        s += f'  meta.line {self.line}\n'
+        if self.meta:
+            s += f'  meta.line {self.line}\n'
         for e in self.entries:
             s += f'  {e}\n'
         return s
