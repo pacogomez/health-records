@@ -193,9 +193,18 @@ def list_cmd(ctx, filter, before, after, record):
             click.secho(f'  {m}', fg='red')
 
 @click.command('latest')
+@click.argument('filter', required=False)
 @click.pass_context
-def latest_cmd(ctx):
-    click.secho('not implemented', fg='red')
+def latest_cmd(ctx, filter):
+    parser = ctx.obj['parser']
+    t = dict()
+    for r in parser.records:
+        for e in r.entries:
+            if not filter or filter in e.key:
+                t[e.key] = [e.key, e.value, parser.metrics[e.key].unit, r.dt]
+    if len(t)>0:
+        t = sorted(t.values(), key=operator.itemgetter(0))
+        click.secho(tabulate(t, headers=['metric', 'value', 'unit', 'date']))
 
 @click.command('delta')
 @click.pass_context

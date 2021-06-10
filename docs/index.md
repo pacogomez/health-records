@@ -145,6 +145,12 @@ phr list body.blood.chol -r
 phr plot body.blood.press.dia body.blood.press.sys body.weight --since 2020-01-01
 
 phr plot acti.heart.rate.max acti.heart.rate.average
+
+phr latest
+
+phr latest weight
+
+phr latest blood
 ```
 
 ## graphs
