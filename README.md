@@ -59,6 +59,7 @@ Copyright (C) 2021 Paco G&oacute;mez. All Rights Reserved.
 
 This code is distributed under the terms of the "GNU GPLv3 only". See [LICENSE](./LICENSE) file for details.
 
+
 ## Author
 
 Paco G&oacute;mez [contact@pacogomez.com](mailto:contact@pacogomez.com)
