@@ -194,8 +194,12 @@ def list_cmd(ctx, filter, before, after, record):
 
 @click.command('latest')
 @click.argument('filter', required=False)
+@click.option('-r', '--record', is_flag=True, default=False)
 @click.pass_context
-def latest_cmd(ctx, filter):
+def latest_cmd(ctx, filter, record):
+    if record:
+        click.secho('not yet implemented', fg='red')
+        return
     parser = ctx.obj['parser']
     t = dict()
     for r in parser.records:
