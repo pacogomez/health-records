@@ -21,12 +21,12 @@ Sample health records:
 ```
 2020-06-07 08:11:00 r 'import from withings - grp 1'
   body.weight 166.34
-  body.fat-mass 21.61
-  body.muscle-mass 133.07
+  body.fat.mass 21.61
+  body.fat.ratio 12.99
+  body.fat-free.mass 144.73
+  body.muscle.mass 133.07
+  body.bone.mass 66.54
   body.water 99.8
-  body.bone-mass 66.54
-  body.fat-ratio 12.99
-  body.fat-free-mass 144.73
 
 2020-06-08 00:00:00 r 'import from withings - grp 4'
   body.heart.rate 76
