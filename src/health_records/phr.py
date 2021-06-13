@@ -5,7 +5,7 @@ import click
 import sys
 from lark import Lark, Transformer, v_args
 from decimal import *
-from datetime import datetime
+from datetime import datetime, timedelta
 from dateutil import parser as dateutil_parser
 from tabulate import tabulate
 import operator
@@ -163,11 +163,15 @@ def metrics_cmd(ctx, filter):
 @click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-r', '--record', is_flag=True, default=False)
+@click.option('-l', '--last')
 @click.pass_context
-def list_cmd(ctx, filter, before, after, record):
+def list_cmd(ctx, filter, before, after, record, last):
     parser = ctx.obj['parser']
     t = list()
     missing_metrics = list()
+    if last:
+        before = datetime.now()
+        after = before - timedelta(1 * int(last))
     for r in parser.records:
         if not after or after < r.dt:
             if not before or r.dt < before:
@@ -229,7 +233,8 @@ def delta_cmd(ctx, filename, duplicated):
 @click.argument('metric', required=True, nargs=-1)
 @click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
-def plot_cmd(ctx, metric, after, before):
+@click.option('-l', '--last')
+def plot_cmd(ctx, metric, after, before, last):
     parser = ctx.obj['parser']
     dates = dict()
     data = dict()
@@ -241,6 +246,9 @@ def plot_cmd(ctx, metric, after, before):
         data[m] = list()
     fd = datetime.now()
     ld = datetime.now()
+    if last:
+        before = datetime.now()
+        after = before - timedelta(1 * int(last))
     for r in parser.records:
         if not after or after < r.dt:
             if not before or r.dt < before:

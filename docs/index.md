@@ -141,11 +141,18 @@ phr list -r
 
 phr list body.blood.chol -r
 
+# measurements in the last 10 days
+
+phr list body.weight -r -l 10
+
 # graph metrics
 phr plot body.blood.press.dia body.blood.press.sys body.weight --since 2020-01-01
 
 phr plot acti.heart.rate.max acti.heart.rate.average
 
+phr plot body.weight -l 365
+
+#
 phr latest
 
 phr latest weight
