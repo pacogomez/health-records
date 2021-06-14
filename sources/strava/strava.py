@@ -50,8 +50,8 @@ def main() -> None:
         o = urlparse(code_url)
         code = parse_qs(o.query)['code']
         token_response = client.exchange_code_for_token(client_id=args.client_id, client_secret=args.client_secret, code=code)
-        print(f'access_token = {token_response["access_token"]}')
-        print(f'refresh_token = {token_response["refresh_token"]}')
+        print(f'export ACCESS_TOKEN={token_response["access_token"]}')
+        print(f'export REFRESH_TOKEN={token_response["refresh_token"]}')
     else:
         client.access_token = args.access_token
         client.refresh_token = args.refresh_token
