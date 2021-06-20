@@ -16,6 +16,8 @@ import warnings
 import matplotlib.cbook
 import numpy as np
 import collections
+from rich.layout import Layout
+from rich.console import Console
 
 warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 
@@ -286,12 +288,20 @@ def ranges_cmd(ctx, range, after, before):
     h = ['date', 'metric', 'min', 'max', 'unit', 'date']
     click.secho(tabulate(t, headers=h))
 
+@click.command('db')
+@click.pass_context
+def dashboard_cmd(ctx):
+    console = Console(height=10)
+    layout = Layout('[italic blue]comming soon...')
+    console.print(layout)
+
 cli.add_command(metrics_cmd)
 cli.add_command(list_cmd)
 cli.add_command(latest_cmd)
 cli.add_command(delta_cmd)
 cli.add_command(plot_cmd)
 cli.add_command(ranges_cmd)
+cli.add_command(dashboard_cmd)
 
 if __name__ == 'health_records.phr':
     cli(obj={}, auto_envvar_prefix='PHR')
