@@ -39,6 +39,12 @@ class T(Transformer):
     def SIGNED_NUMBER(self, tok):
         return tok.update(value=Decimal(tok))
 
+    def MEASUREMENT(self, tok):
+        if ':' in tok:
+            return tok
+        else:
+            return tok.update(value=Decimal(tok))
+
     def open_directive(self, dir_date, item, unit=None):
         if unit is not None:
             self.metrics[item.value] = Item(key=unit.value, name=unit.value, unit=unit)
@@ -233,7 +239,7 @@ def delta_cmd(ctx, filename, duplicated):
 @click.command('plot')
 @click.pass_context
 @click.argument('metric', required=True, nargs=-1)
-@click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-l', '--last')
 def plot_cmd(ctx, metric, after, before, last):
@@ -260,7 +266,11 @@ def plot_cmd(ctx, metric, after, before, last):
                     for m in metric:
                         if m == e.key:
                             dates[m].append(r.dt)
-                            data[m].append(e.value)
+                            if parser.metrics[e.key].unit == 'hours:min':
+                                t = e.value.split(':')
+                                data[m].append(float(t[0])+float(t[1])/60)
+                            else:
+                                data[m].append(e.value)
     if fd != ld:
         delta = ld - fd
         plt.gca().xaxis.set_major_formatter(mdates.DateFormatter('%Y-%m-%d'))
@@ -274,10 +284,11 @@ def plot_cmd(ctx, metric, after, before, last):
         plt.legend()
         plt.show()
 
+
 @click.command('ranges')
 @click.pass_context
 @click.argument('range', required=False, nargs=-1)
-@click.option('-s', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
 @click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
 def ranges_cmd(ctx, range, after, before):
     parser = ctx.obj['parser']

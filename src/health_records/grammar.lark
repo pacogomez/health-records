@@ -6,8 +6,10 @@
 ?start: directive*
 
 ?directive: CALENDAR_DATE "open" ITEM [UNIT] -> open_directive
-          | CALENDAR_DATE TIME "r" NARRATIVE (ITEM [SIGNED_NUMBER | STRING])+ -> record_directive
+          | CALENDAR_DATE TIME "r" NARRATIVE (ITEM [MEASUREMENT | STRING])+ -> record_directive
           | CALENDAR_DATE "range" ITEM SIGNED_NUMBER SIGNED_NUMBER -> range_directive
+
+MEASUREMENT : SIGNED_NUMBER [":" SIGNED_NUMBER]
 
 NARRATIVE : STRING
 
@@ -30,7 +32,7 @@ SECOND : "0".."5" DIGIT
 TIME   : "T"? HOUR ":"? MINUTE [":"? SECOND] ["am"|"AM"|"pm"|"PM"]
 
 ITEM : ("_"|LETTER) ("_"|"-"|LETTER|DIGIT|".")* ("_"|LETTER|DIGIT)
-UNIT : ("_"|LETTER) ("_"|"-"|LETTER|DIGIT|"."|"/")*
+UNIT : ("_"|LETTER) ("_"|"-"|LETTER|DIGIT|"."|"/"|":")*
 
 COMMENT: /;[^\n]*/
 
