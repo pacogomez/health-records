@@ -138,6 +138,20 @@ class Record:
             return self.dt == other.dt and self.entries == other.entries
         return false
 
+def to_timedelta(d):
+    if d.isnumeric():
+        d = f'{d}d'
+    if d.endswith('d'):
+        return timedelta(days=int(d[:-1]))
+    elif d.endswith('w'):
+        return timedelta(weeks=int(d[:-1]))
+    elif d.endswith('m'):
+        return timedelta(days=31*int(d[:-1]))
+    elif d.endswith('y'):
+        return timedelta(days=365*int(d[:-1]))
+    else:
+        return None
+
 @click.group()
 @click.option('-f', '--filename', type=click.Path(exists=True))
 @click.option('-c', '--config', type=click.Path(exists=True))
@@ -168,18 +182,18 @@ def metrics_cmd(ctx, filter):
 
 @click.command('list')
 @click.argument('filter', required=False)
-@click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
-@click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
+@click.option('-a', '--after', type=click.DateTime(formats=['%Y-%m-%d']))
+@click.option('-b', '--before', type=click.DateTime(formats=['%Y-%m-%d']))
 @click.option('-r', '--record', is_flag=True, default=False)
-@click.option('-l', '--last')
+@click.option('-l', '--last', default='7d')
 @click.pass_context
 def list_cmd(ctx, filter, before, after, record, last):
     parser = ctx.obj['parser']
     t = list()
     missing_metrics = list()
-    if last:
+    if last and last != '-1':
         before = datetime.now()
-        after = before - timedelta(1 * int(last))
+        after = before - to_timedelta(last)
     for r in parser.records:
         if not after or after < r.dt:
             if not before or r.dt < before:
@@ -239,9 +253,9 @@ def delta_cmd(ctx, filename, duplicated):
 @click.command('plot')
 @click.pass_context
 @click.argument('metric', required=True, nargs=-1)
-@click.option('-a', '--after', type=click.DateTime(formats=["%Y-%m-%d"]))
-@click.option('-b', '--before', type=click.DateTime(formats=["%Y-%m-%d"]))
-@click.option('-l', '--last')
+@click.option('-a', '--after', type=click.DateTime(formats=['%Y-%m-%d']))
+@click.option('-b', '--before', type=click.DateTime(formats=['%Y-%m-%d']))
+@click.option('-l', '--last', default='7d')
 def plot_cmd(ctx, metric, after, before, last):
     parser = ctx.obj['parser']
     dates = dict()
@@ -254,9 +268,9 @@ def plot_cmd(ctx, metric, after, before, last):
         data[m] = list()
     fd = datetime.now()
     ld = datetime.now()
-    if last:
+    if last and last != '-1':
         before = datetime.now()
-        after = before - timedelta(1 * int(last))
+        after = before - to_timedelta(last)
     for r in parser.records:
         if not after or after < r.dt:
             if not before or r.dt < before:
