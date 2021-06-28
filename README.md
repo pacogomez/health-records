@@ -38,7 +38,7 @@ Sample command to generate a graph with some health data:
 ```
 phr plot body.weight
 ```
-<img src="./docs/images/sample-plot.png" width="600">
+<img src="https://github.com/pacogomez/health-records/blob/main/docs/images/sample-plot.png" width="600">
 
 
 ## Install
