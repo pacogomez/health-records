@@ -317,7 +317,7 @@ def ranges_cmd(ctx, range, after, before):
 @click.pass_context
 def dashboard_cmd(ctx):
     console = Console(height=10)
-    layout = Layout('[italic blue]comming soon...')
+    layout = Layout('[italic blue]coming soon...')
     console.print(layout)
 
 cli.add_command(metrics_cmd)
