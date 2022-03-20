@@ -28,6 +28,7 @@ warnings.filterwarnings("ignore",category=matplotlib.cbook.mplDeprecation)
 #TODO:
 #  command to show errors
 #  query by expression / query language
+#  when providing dates (after, before) ignore `last`
 
 @v_args(inline=True)
 class T(Transformer):
