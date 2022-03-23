@@ -8,5 +8,7 @@ if exists("b:current_syntax")
 endif
 
 " Keywords
-syn keyword directive open close r record range
+syn keyword phrDirective open close r record range
+
+hi def link phrDirective ctermfg=cyan guifg=#00fff
 
